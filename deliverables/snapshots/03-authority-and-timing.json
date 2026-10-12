@@ -1,0 +1,136 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T201652Z-S03",
+  "run_id": "RUN-20261012T201652Z",
+  "stage": "authority-and-timing",
+  "sequence": 3,
+  "created_at": "2026-10-12T20:20:03Z",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T201652Z-S02",
+    "path": "deliverables/snapshots/02-source-capture.json",
+    "sha256": "sha256:376bfe4d3e8fd30048951c2b0ecb7fba27381f328978a34a502f9afc1d15ccd0"
+  },
+  "consumed_record_ids": [
+    "SRC-ART50-SD#A1",
+    "SRC-GUIDANCE#A1",
+    "SRC-TIMELINE#A1"
+  ],
+  "produced_record_ids": [
+    "BLK-AMEND",
+    "BLK-OJ",
+    "CTX-GUIDANCE-DEPLOYER",
+    "CTX-SERVICE-DESK",
+    "CTX-TIMELINE-0802",
+    "CTX-TIMELINE-1202"
+  ],
+  "state": {
+    "review_date": "2026-08-26",
+    "binding_rules": [],
+    "timing_rules": [],
+    "guidance_context": [
+      {
+        "id": "CTX-SERVICE-DESK",
+        "summary": "Service Desk Article 50 page is a reproduction of the consolidated text, used for cross-checking only.",
+        "evidence_ids": [
+          "EV-SD-ART50"
+        ],
+        "owner": "Legal",
+        "authority": "advisory"
+      },
+      {
+        "id": "CTX-TIMELINE-0802",
+        "summary": "Official timeline: Article 50 transparency rules apply from 2 August 2026 (consistent with Art. 113).",
+        "evidence_ids": [
+          "EV-TIMELINE-20260802"
+        ],
+        "owner": "Legal",
+        "authority": "advisory"
+      },
+      {
+        "id": "CTX-TIMELINE-1202",
+        "summary": "Official timeline: 2 December 2026 transitional deadline for certain providers under Art. 50(2) (consistent with new Art. 111(4)).",
+        "evidence_ids": [
+          "EV-TIMELINE-20261202"
+        ],
+        "owner": "Legal",
+        "authority": "advisory"
+      },
+      {
+        "id": "CTX-GUIDANCE-DEPLOYER",
+        "summary": "Commission FAQ summarises deployer duties as Art. 50(3) information and Art. 50(4) deep-fake / public-interest text disclosure; explanatory, not binding.",
+        "evidence_ids": [
+          "EV-GUIDANCE-DEPLOYERS"
+        ],
+        "owner": "Legal",
+        "authority": "advisory"
+      }
+    ],
+    "authority_blockers": [
+      {
+        "id": "BLK-OJ",
+        "summary": "Binding Regulation (EU) 2024/1689 text unavailable this run",
+        "evidence_ids": [
+          "SRC-LAW-OJ#A3"
+        ],
+        "owner": "Legal",
+        "rationale": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document"
+      },
+      {
+        "id": "BLK-AMEND",
+        "summary": "Amending Regulation (EU) 2026/1744 unavailable this run",
+        "evidence_ids": [
+          "SRC-LAW-AMEND#A3"
+        ],
+        "owner": "Legal",
+        "rationale": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document"
+      }
+    ],
+    "authority_available": false,
+    "legal_version_basis": "Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744 (in force before the review date); the 27 July 2026 consolidation is a navigation aid, not a separate act."
+  },
+  "unresolved": [
+    {
+      "id": "BLK-OJ",
+      "summary": "Binding Regulation (EU) 2024/1689 text unavailable this run",
+      "evidence_ids": [
+        "SRC-LAW-OJ#A3"
+      ],
+      "owner": "Legal",
+      "rationale": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document"
+    },
+    {
+      "id": "BLK-AMEND",
+      "summary": "Amending Regulation (EU) 2026/1744 unavailable this run",
+      "evidence_ids": [
+        "SRC-LAW-AMEND#A3"
+      ],
+      "owner": "Legal",
+      "rationale": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-03",
+      "stage": "authority-and-timing",
+      "summary": "Binding basis is the OJ act plus the OJ amendment; consolidation is navigation only",
+      "concern": "Several legal routes say slightly different things about which text counts.",
+      "options": [
+        "Rely on the Service Desk/consolidated text",
+        "Rely on OJ texts and cross-check navigation aids"
+      ],
+      "source_basis": "Interview 03:34 PM: 'The July 27, 2026, consolidation is a navigation aid, not a separate legal act. We always check LAW, OJ, AMEND, and CONSOLIDATED.'",
+      "chosen_behavior": "Art. 50 paragraphs are extracted from the OJ text; Art. 50(7) and Art. 111(4) from Regulation (EU) 2026/1744; consolidated and Service Desk texts are compared, not cited as binding.",
+      "rationale": "Only the OJ publications are legally authentic.",
+      "tradeoffs": [
+        "More parsing of large EUR-Lex pages",
+        "If the OJ page changes layout the run blocks rather than falling back"
+      ],
+      "downstream_effect": "Statutory register rows cite RULE-ART50-* evidence from the OJ source.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "run_id": "RUN-20261012T201652Z",
+  "extracts": [
+    {
+      "id": "EV-INTERVIEW",
+      "source_id": "INTERVIEW",
+      "locator": "interviews/project-b-regulatory-compliance-20261012-1939.md (sha256:fed9b5800ba033105c2f7b7191675f73f03d6e1dd0a05a06ec9b735ac7a6cdb5)",
+      "extract": "Work Sim interview export with the Compliance and Operations Manager; timestamps cited in decisions and config.",
+      "summary": "INTERVIEW interviews/project-b-regulatory-compliance-20261012-1939.md (sha256:fed9b5800ba033105c2f7b7191675f73f03d6e1dd0a05a06ec9b735ac7a6cdb5)",
+      "evidence_ids": [
+        "INTERVIEW"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI001",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 2 (system_id=AI-001)",
+      "extract": "{\"system_id\": \"AI-001\", \"system_name\": \"Learner Support Chat\", \"use_case\": \"Answers routine learner questions\", \"owner\": \"Learner Operations\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"learners\", \"output_type\": \"direct_interaction\", \"current_notice\": \"yes\", \"human_review\": \"staff escalation\", \"evidence_status\": \"complete\", \"evidence_updated_at\": \"2026-08-20\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 2 (system_id=AI-001)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI002",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 3 (system_id=AI-002)",
+      "extract": "{\"system_id\": \"AI-002\", \"system_name\": \"Admissions Draft Assistant\", \"use_case\": \"Drafts applicant email replies\", \"owner\": \"Admissions\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"applicants\", \"output_type\": \"text\", \"current_notice\": \"unknown\", \"human_review\": \"advisor approval\", \"evidence_status\": \"partial\", \"evidence_updated_at\": \"2026-07-01\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 3 (system_id=AI-002)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI003",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 4 (system_id=AI-003)",
+      "extract": "{\"system_id\": \"AI-003\", \"system_name\": \"Campaign Image Studio\", \"use_case\": \"Creates public campaign images\", \"owner\": \"Communications\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"public\", \"output_type\": \"synthetic_image\", \"current_notice\": \"visible_label\", \"human_review\": \"communications approval\", \"evidence_status\": \"complete\", \"evidence_updated_at\": \"2026-08-22\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 4 (system_id=AI-003)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI004",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 5 (system_id=AI-004)",
+      "extract": "{\"system_id\": \"AI-004\", \"system_name\": \"Pronunciation Coach\", \"use_case\": \"Provides spoken practice feedback\", \"owner\": \"Learning Experience\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"learners\", \"output_type\": \"direct_interaction\", \"current_notice\": \"no\", \"human_review\": \"instructor escalation\", \"evidence_status\": \"complete\", \"evidence_updated_at\": \"2026-08-18\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 5 (system_id=AI-004)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI005",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 6 (system_id=AI-005)",
+      "extract": "{\"system_id\": \"AI-005\", \"system_name\": \"Remote Proctor Signal\", \"use_case\": \"Flags assessment sessions for review\", \"owner\": \"Assessment Operations\", \"provider_role\": \"unknown\", \"deployer_role\": \"yes\", \"exposed_group\": \"learners\", \"output_type\": \"classification\", \"current_notice\": \"yes\", \"human_review\": \"human adjudication\", \"evidence_status\": \"stale\", \"evidence_updated_at\": \"2026-04-15\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 6 (system_id=AI-005)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI006",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 7 (system_id=AI-006)",
+      "extract": "{\"system_id\": \"AI-006\", \"system_name\": \"Staff Summary Assistant\", \"use_case\": \"Summarizes internal meeting notes\", \"owner\": \"People Operations\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"staff\", \"output_type\": \"text\", \"current_notice\": \"not_applicable\", \"human_review\": \"author review\", \"evidence_status\": \"complete\", \"evidence_updated_at\": \"2026-08-14\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 7 (system_id=AI-006)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI007",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 8 (system_id=AI-007)",
+      "extract": "{\"system_id\": \"AI-007\", \"system_name\": \"Website Guide Avatar\", \"use_case\": \"Answers public programme questions\", \"owner\": \"Marketing\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"public\", \"output_type\": \"direct_interaction\", \"current_notice\": \"no\", \"human_review\": \"marketing escalation\", \"evidence_status\": \"conflicting\", \"evidence_updated_at\": \"2026-08-21\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 8 (system_id=AI-007)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-SYSTEMS-AI008",
+      "source_id": "SRC-SYSTEMS",
+      "locator": "SYSTEMS sheet row 9 (system_id=AI-008)",
+      "extract": "{\"system_id\": \"AI-008\", \"system_name\": \"Video Localisation Tool\", \"use_case\": \"Generates dubbed public programme videos\", \"owner\": \"Communications\", \"provider_role\": \"no\", \"deployer_role\": \"yes\", \"exposed_group\": \"public\", \"output_type\": \"synthetic_audio_video\", \"current_notice\": \"visible_label\", \"human_review\": \"communications approval\", \"evidence_status\": \"partial\", \"evidence_updated_at\": \"2026-08-19\", \"record_version\": \"register-2026-08-26\"}",
+      "summary": "SRC-SYSTEMS SYSTEMS sheet row 9 (system_id=AI-008)",
+      "evidence_ids": [
+        "SRC-SYSTEMS"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC001",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 2 (record_id=REC-001)",
+      "extract": "{\"record_id\": \"REC-001\", \"system_id\": \"AI-001\", \"record_type\": \"evidence\", \"reported_at\": \"2026-08-20\", \"owner\": \"Learner Operations\", \"status\": \"closed\", \"evidence_ref\": \"notice-screen-v3\", \"evidence_state\": \"complete\", \"notes\": \"Notice screenshot and release record agree\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 2 (record_id=REC-001)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC002",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 3 (record_id=REC-002)",
+      "extract": "{\"record_id\": \"REC-002\", \"system_id\": \"AI-002\", \"record_type\": \"evidence_gap\", \"reported_at\": \"2026-08-23\", \"owner\": \"Admissions\", \"status\": \"open\", \"evidence_ref\": \"applicant-email-sample\", \"evidence_state\": \"missing\", \"notes\": \"No evidence that recipients are told when generated text is used\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 3 (record_id=REC-002)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC003",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 4 (record_id=REC-003)",
+      "extract": "{\"record_id\": \"REC-003\", \"system_id\": \"AI-003\", \"record_type\": \"incident\", \"reported_at\": \"2026-08-24\", \"owner\": \"Communications\", \"status\": \"open\", \"evidence_ref\": \"social-post-884\", \"evidence_state\": \"conflicting\", \"notes\": \"Visible label exists but exported platform copy may have lost metadata\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 4 (record_id=REC-003)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC004",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 5 (record_id=REC-004)",
+      "extract": "{\"record_id\": \"REC-004\", \"system_id\": \"AI-004\", \"record_type\": \"incident\", \"reported_at\": \"2026-08-18\", \"owner\": \"Learning Experience\", \"status\": \"open\", \"evidence_ref\": \"coach-onboarding-v2\", \"evidence_state\": \"complete\", \"notes\": \"First interaction contains no AI notice\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 5 (record_id=REC-004)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC005",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 6 (record_id=REC-005)",
+      "extract": "{\"record_id\": \"REC-005\", \"system_id\": \"AI-005\", \"record_type\": \"evidence_gap\", \"reported_at\": \"2026-08-25\", \"owner\": \"Assessment Operations\", \"status\": \"open\", \"evidence_ref\": \"provider-role-questionnaire\", \"evidence_state\": \"stale\", \"notes\": \"Provider role questionnaire predates the current release\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 6 (record_id=REC-005)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC006",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 7 (record_id=REC-006)",
+      "extract": "{\"record_id\": \"REC-006\", \"system_id\": \"AI-005\", \"record_type\": \"evidence\", \"reported_at\": \"2026-08-25\", \"owner\": \"Assessment Operations\", \"status\": \"open\", \"evidence_ref\": \"human-review-sop-v4\", \"evidence_state\": \"complete\", \"notes\": \"Flag never makes the final assessment decision\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 7 (record_id=REC-006)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC007",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 8 (record_id=REC-007)",
+      "extract": "{\"record_id\": \"REC-007\", \"system_id\": \"AI-006\", \"record_type\": \"evidence\", \"reported_at\": \"2026-08-14\", \"owner\": \"People Operations\", \"status\": \"closed\", \"evidence_ref\": \"internal-use-review\", \"evidence_state\": \"complete\", \"notes\": \"Tool is restricted to staff workspace\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 8 (record_id=REC-007)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC008",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 9 (record_id=REC-008)",
+      "extract": "{\"record_id\": \"REC-008\", \"system_id\": \"AI-007\", \"record_type\": \"incident\", \"reported_at\": \"2026-08-21\", \"owner\": \"Marketing\", \"status\": \"open\", \"evidence_ref\": \"avatar-page-capture\", \"evidence_state\": \"conflicting\", \"notes\": \"Owner says a banner exists but the current capture shows none\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 9 (record_id=REC-008)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC009",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 10 (record_id=REC-009)",
+      "extract": "{\"record_id\": \"REC-009\", \"system_id\": \"AI-008\", \"record_type\": \"evidence\", \"reported_at\": \"2026-08-19\", \"owner\": \"Communications\", \"status\": \"open\", \"evidence_ref\": \"localisation-export-test\", \"evidence_state\": \"partial\", \"notes\": \"Visible label verified but machine-readable provenance not checked\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 10 (record_id=REC-009)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-EVIDENCE-REC010",
+      "source_id": "SRC-EVIDENCE",
+      "locator": "EVIDENCE sheet row 11 (record_id=REC-010)",
+      "extract": "{\"record_id\": \"REC-010\", \"system_id\": \"AI-008\", \"record_type\": \"exception_request\", \"reported_at\": \"2026-08-26\", \"owner\": \"Communications\", \"status\": \"draft\", \"evidence_ref\": \"exception-draft-008\", \"evidence_state\": \"missing\", \"notes\": \"No Legal approval or expiry date recorded\"}",
+      "summary": "SRC-EVIDENCE EVIDENCE sheet row 11 (record_id=REC-010)",
+      "evidence_ids": [
+        "SRC-EVIDENCE"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT001",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 2 (action_id=ACT-001)",
+      "extract": "{\"action_id\": \"ACT-001\", \"system_id\": \"AI-004\", \"action\": \"Add and verify first-interaction AI notice\", \"owner\": \"Learning Experience\", \"due_date\": \"2026-09-04\", \"status\": \"planned\", \"approval_required\": \"operations\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 2 (action_id=ACT-001)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT002",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 3 (action_id=ACT-002)",
+      "extract": "{\"action_id\": \"ACT-002\", \"system_id\": \"AI-007\", \"action\": \"Resolve disclosure evidence conflict\", \"owner\": \"Marketing\", \"due_date\": \"2026-09-03\", \"status\": \"open\", \"approval_required\": \"operations\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 3 (action_id=ACT-002)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT003",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 4 (action_id=ACT-003)",
+      "extract": "{\"action_id\": \"ACT-003\", \"system_id\": \"AI-002\", \"action\": \"Confirm recipient disclosure practice\", \"owner\": \"Admissions\", \"due_date\": \"2026-09-08\", \"status\": \"open\", \"approval_required\": \"legal\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 4 (action_id=ACT-003)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT004",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 5 (action_id=ACT-004)",
+      "extract": "{\"action_id\": \"ACT-004\", \"system_id\": \"AI-003\", \"action\": \"Verify machine-readable provenance after publishing\", \"owner\": \"Communications\", \"due_date\": \"2026-09-10\", \"status\": \"open\", \"approval_required\": \"operations\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 5 (action_id=ACT-004)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT005",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 6 (action_id=ACT-005)",
+      "extract": "{\"action_id\": \"ACT-005\", \"system_id\": \"AI-005\", \"action\": \"Refresh provider-role and release evidence\", \"owner\": \"Assessment Operations\", \"due_date\": \"2026-09-12\", \"status\": \"open\", \"approval_required\": \"legal\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 6 (action_id=ACT-005)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT006",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 7 (action_id=ACT-006)",
+      "extract": "{\"action_id\": \"ACT-006\", \"system_id\": \"AI-008\", \"action\": \"Complete provenance test\", \"owner\": \"Communications\", \"due_date\": \"2026-09-09\", \"status\": \"open\", \"approval_required\": \"operations\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 7 (action_id=ACT-006)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT007",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 8 (action_id=ACT-007)",
+      "extract": "{\"action_id\": \"ACT-007\", \"system_id\": \"AI-008\", \"action\": \"Review exception request\", \"owner\": \"Legal\", \"due_date\": \"2026-09-15\", \"status\": \"blocked\", \"approval_required\": \"legal\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 8 (action_id=ACT-007)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-CALENDAR-ACT008",
+      "source_id": "SRC-CALENDAR",
+      "locator": "CALENDAR sheet row 9 (action_id=ACT-008)",
+      "extract": "{\"action_id\": \"ACT-008\", \"system_id\": \"ALL\", \"action\": \"Quarterly AI register evidence review\", \"owner\": \"Operations\", \"due_date\": \"2026-10-02\", \"status\": \"scheduled\", \"approval_required\": \"operations\", \"source_version\": \"calendar-2026-08-26\"}",
+      "summary": "SRC-CALENDAR CALENDAR sheet row 9 (action_id=ACT-008)",
+      "evidence_ids": [
+        "SRC-CALENDAR"
+      ]
+    },
+    {
+      "id": "EV-SD-ART50",
+      "source_id": "SRC-ART50-SD",
+      "locator": "AI Act Service Desk Article 50 page",
+      "extract": "Service Desk reproduction based on consolidation 2026-07-27; paragraphs found: ['1', '2', '3', '4', '5', '6', '7']",
+      "summary": "SRC-ART50-SD AI Act Service Desk Article 50 page",
+      "evidence_ids": [
+        "SRC-ART50-SD"
+      ]
+    },
+    {
+      "id": "EV-TIMELINE-20260802",
+      "source_id": "SRC-TIMELINE",
+      "locator": "Timeline entry 02 Aug 2026",
+      "extract": "Transparency rules (Article 50) start to apply.",
+      "summary": "SRC-TIMELINE Timeline entry 02 Aug 2026",
+      "evidence_ids": [
+        "SRC-TIMELINE"
+      ]
+    },
+    {
+      "id": "EV-TIMELINE-20261202",
+      "source_id": "SRC-TIMELINE",
+      "locator": "Timeline entry 02 Dec 2026",
+      "extract": "Transitional deadline for certain providers of AI systems, including GPAI systems, generating synthetic content, that were already placed on the market before 02 Aug 2026, to comply with Article 50(2).",
+      "summary": "SRC-TIMELINE Timeline entry 02 Dec 2026",
+      "evidence_ids": [
+        "SRC-TIMELINE"
+      ]
+    },
+    {
+      "id": "EV-GUIDANCE-DEPLOYERS",
+      "source_id": "SRC-GUIDANCE",
+      "locator": "Commission Article 50 FAQ, deployer obligations",
+      "extract": "Under the AI Act, deployers must ensure that they inform people when they use emotion recognition or biometric categorisation systems (Articles 50(3) of the AI Act) and clearly label deepfakes and AI-generated or manipulated text published on matters of public interest without human review or editorial control (Article 50(4) of the AI Act).",
+      "summary": "SRC-GUIDANCE Commission Article 50 FAQ, deployer obligations",
+      "evidence_ids": [
+        "SRC-GUIDANCE"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLNOTICE",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Learner and public transparency (block 7e90cdc4-4505-4858-be25-515616d70184)",
+      "extract": "A person directly interacting with an AI system must receive a clear notice before or at the first interaction unless the AI nature is obvious from the context.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Learner and public transparency (block 7e90cdc4-4505-4858-be25-515616d70184)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLSYNTHETIC",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Learner and public transparency (block 3e6cadff-3969-489a-9815-129b14e02f0c)",
+      "extract": "Public synthetic images, audio, or video must retain machine-readable provenance when the tool supports it. The Communications owner also requires a visible label unless Legal approves a documented exception.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Learner and public transparency (block 3e6cadff-3969-489a-9815-129b14e02f0c)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLSTAFFDRAFT",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Learner and public transparency (block 41ca6506-ba15-4af7-a03e-c57112da262a)",
+      "extract": "Staff-only drafting tools are not automatically treated as public interactions. The owner must still record how generated material reaches learners or the public.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Learner and public transparency (block 41ca6506-ba15-4af7-a03e-c57112da262a)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLREGISTER",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Evidence and exceptions (block d6992cd6-cb82-416a-87f1-0cc6bf4b4204)",
+      "extract": "Each registered system must have a current owner, use description, exposed group, disclosure status, human-review path, and evidence reference.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Evidence and exceptions (block d6992cd6-cb82-416a-87f1-0cc6bf4b4204)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLEVIDENCESTATES",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Evidence and exceptions (block 8ddc27f5-6326-470f-aa2b-71f04ac6f616)",
+      "extract": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Evidence and exceptions (block 8ddc27f5-6326-470f-aa2b-71f04ac6f616)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLEXCEPTION",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Evidence and exceptions (block a9d1fb18-ee77-4c80-a085-6e06966c8f1e)",
+      "extract": "An exception requires a named owner, rationale, expiry date, and Legal approval. The automation may draft an exception request but may not approve it.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Evidence and exceptions (block a9d1fb18-ee77-4c80-a085-6e06966c8f1e)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-CTRLBOUNDARY",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 > Approval boundary (block 5ae4808f-d249-4ee7-bd9f-66bd15d58055)",
+      "extract": "Legal owns final interpretation of the EU AI Act. Operations owns policy activation and operational deadlines. System owners correct evidence. The automation may prepare a draft impact package and proposed actions; it may not give final legal advice, activate policy, change a production deadline, close an incident, or submit an official response.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 > Approval boundary (block 5ae4808f-d249-4ee7-bd9f-66bd15d58055)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-OPERATINGSCOPE",
+      "source_id": "SRC-POLICY",
+      "locator": "AI-POL-2026-08-15 context > Operating scope (block 39a6c5d1-4cf3-42ea-bed2-e2358a652904)",
+      "extract": "For AI-001, AI-002, AI-003, AI-004, AI-006, AI-007 and AI-008, Quillhaven licenses and operates a third-party supplier's existing AI product. It did not develop or commission development of that product, distribute it as its own AI product, or place it into service under its own product name or trademark. The register's system names are internal inventory labels. Company content, ordinary settings and website placement do not describe a separately developed Quillhaven AI product. The current AI-005 release's development, commissioning and product-branding records are still awaiting the Assessment Operations owner refresh; the old questionnaire does not resolve them.",
+      "summary": "SRC-POLICY AI-POL-2026-08-15 context > Operating scope (block 39a6c5d1-4cf3-42ea-bed2-e2358a652904)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-PRODUCTTIMING",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Product timing and evidence limits (block af61ff06-4e78-44a8-9d7f-52238a870a79)",
+      "extract": "The suppliers' product-release notices held by Operations report that the currently licensed image-generation product used for AI-003 and audio/video-generation product used for AI-008 were first offered commercially in the EU on 1 June 2026. These are product market-entry dates, not the dates Quillhaven exported or published individual images or videos. They do not identify Quillhaven as the supplier. Current release and market-entry evidence for AI-005 remains unavailable.",
+      "summary": "SRC-POLICY context > Product timing and evidence limits (block af61ff06-4e78-44a8-9d7f-52238a870a79)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI001",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-001 (block 3f8d8763-fa5f-4ffe-8122-73a15496d8b5)",
+      "extract": "Learners exchange questions and generated replies directly with the licensed support chat. It does not classify biometric data or infer emotions or intentions. The existing notice and evidence reports remain the source for disclosure practice.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-001 (block 3f8d8763-fa5f-4ffe-8122-73a15496d8b5)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI002",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-002 (block 03ec4cd9-cf3f-4949-9e03-3e11bceca258)",
+      "extract": "Staff use the drafting product privately. An admissions advisor reviews and edits a draft before personally sending an individual applicant email; applicants do not converse with the AI product. These are individual administrative replies, not material published to inform the public about matters of public interest.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-002 (block 03ec4cd9-cf3f-4949-9e03-3e11bceca258)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI003",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-003 (block de175065-2691-4e41-81f4-c8ea55d1b5ac)",
+      "extract": "The current campaign uses visibly illustrated fictional classroom scenes. They are not depictions of an existing person, campus, object or event presented as an authentic photograph or recording. The supplier's product generates images from prompts; this use is not limited to minor correction of supplied images. The published-copy metadata conflict in REC-003 remains unresolved.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-003 (block de175065-2691-4e41-81f4-c8ea55d1b5ac)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI004",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-004 (block 2aacbbf1-953a-463f-92e3-70b3db3e5131)",
+      "extract": "Learners interact directly with the licensed spoken-practice product and receive pronunciation feedback. It evaluates spoken pronunciation; it is not used to identify or infer emotions or intentions or to assign people to categories from biometric data. The missing first-interaction notice remains as reported.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-004 (block 2aacbbf1-953a-463f-92e3-70b3db3e5131)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI005",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-005 (block 2e28b3c4-a5e1-4dc3-9a18-0a22ff63e41e)",
+      "extract": "The product flags assessment-session activity for a human reviewer and never makes the final assessment decision. Current-release documentation has not yet established whether the flagging uses biometric data to infer emotions, intentions or personal categories. Assessment Operations must supply those facts together with the current development and release records; a human-review step does not settle them.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-005 (block 2e28b3c4-a5e1-4dc3-9a18-0a22ff63e41e)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI006",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-006 (block 2baa4238-573a-4f91-a394-c7dd73ba2f5c)",
+      "extract": "Staff generate internal meeting summaries within the restricted staff workspace. The summaries are not published or sent to applicants, learners or the general public. They do not involve generated or manipulated images, audio or video.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-006 (block 2baa4238-573a-4f91-a394-c7dd73ba2f5c)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI007",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-007 (block a44120e5-ad1b-4e65-8c06-dc4f43c3630b)",
+      "extract": "Visitors converse directly with the licensed website guide. Its visible character is an obviously stylized fictional graphic, not a likeness or recording of an existing person. The graphic alone does not establish what visitors understand about the conversation. The owner/banner and current-capture conflict in REC-008 remains unresolved.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-007 (block a44120e5-ad1b-4e65-8c06-dc4f43c3630b)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    },
+    {
+      "id": "EV-POLICY-AI008",
+      "source_id": "SRC-POLICY",
+      "locator": "context > Actual use and content > AI-008 (block a46fd543-30cc-4cd3-bf4d-591434c636f2)",
+      "extract": "Communications uses the supplier's product to create translated speech and adjusted lip movements for recorded programme presenters. The presenters are real people; the altered recording makes them appear to speak words in a language they did not actually record, and a viewer could mistake it for an authentic recording without disclosure. The videos communicate programme information, not an evidently artistic, satirical or fictional performance. The visible-label report, untested provenance and unapproved exception request remain exactly as recorded.",
+      "summary": "SRC-POLICY context > Actual use and content > AI-008 (block a46fd543-30cc-4cd3-bf4d-591434c636f2)",
+      "evidence_ids": [
+        "SRC-POLICY"
+      ]
+    }
+  ]
+}

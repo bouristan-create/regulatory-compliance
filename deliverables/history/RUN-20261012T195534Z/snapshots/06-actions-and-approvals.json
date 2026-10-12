@@ -1,0 +1,1194 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T195534Z-S06",
+  "run_id": "RUN-20261012T195534Z",
+  "stage": "actions-and-approvals",
+  "sequence": 6,
+  "created_at": "2026-10-12T19:55:37Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T195534Z-S05",
+    "path": "deliverables/snapshots/05-impact-analysis.json",
+    "sha256": "sha256:d609ac6a4c30f33de80ece7437130b41bca199e71af23184557258db335fd700"
+  },
+  "consumed_record_ids": [
+    "IMP-AI-001-ART50",
+    "IMP-AI-001-NOTICE",
+    "IMP-AI-002-ART50",
+    "IMP-AI-002-STAFF-DRAFT",
+    "IMP-AI-003-ART50",
+    "IMP-AI-003-SYNTHETIC",
+    "IMP-AI-004-ART50",
+    "IMP-AI-004-NOTICE",
+    "IMP-AI-005-ART50",
+    "IMP-AI-005-EVIDENCE-CURRENCY",
+    "IMP-AI-006-ART50",
+    "IMP-AI-006-STAFF-DRAFT",
+    "IMP-AI-007-ART50",
+    "IMP-AI-007-NOTICE",
+    "IMP-AI-008-ART50",
+    "IMP-AI-008-EXCEPTION",
+    "IMP-AI-008-SYNTHETIC"
+  ],
+  "produced_record_ids": [
+    "APR-IMP-AI-001-ART50",
+    "APR-IMP-AI-001-NOTICE",
+    "APR-IMP-AI-002-ART50",
+    "APR-IMP-AI-002-STAFF-DRAFT",
+    "APR-IMP-AI-003-ART50",
+    "APR-IMP-AI-003-SYNTHETIC",
+    "APR-IMP-AI-004-ART50",
+    "APR-IMP-AI-004-NOTICE",
+    "APR-IMP-AI-005-ART50",
+    "APR-IMP-AI-005-EVIDENCE-CURRENCY",
+    "APR-IMP-AI-006-ART50",
+    "APR-IMP-AI-006-STAFF-DRAFT",
+    "APR-IMP-AI-007-ART50",
+    "APR-IMP-AI-007-NOTICE",
+    "APR-IMP-AI-008-ART50",
+    "APR-IMP-AI-008-EXCEPTION",
+    "APR-IMP-AI-008-SYNTHETIC",
+    "ESC-AI-005-SCOPE",
+    "ESC-IMP-AI-008-EXCEPTION",
+    "PA-ACT-001",
+    "PA-ACT-002",
+    "PA-ACT-003",
+    "PA-ACT-004",
+    "PA-ACT-005",
+    "PA-ACT-006",
+    "PA-ACT-007",
+    "PA-ACT-008",
+    "PA-NEW-AI-001-ART50",
+    "PA-NEW-AI-003-ART50",
+    "PA-NEW-AI-004-ART50",
+    "PA-NEW-AI-006-ART50",
+    "PA-NEW-AI-007-ART50",
+    "PA-NEW-AI-008-ART50",
+    "RR-001",
+    "RR-002",
+    "RR-003",
+    "RR-004",
+    "RR-005",
+    "RR-006",
+    "RR-007",
+    "RR-008",
+    "RR-009",
+    "RR-010",
+    "RR-011",
+    "RR-012",
+    "RR-013",
+    "RR-014",
+    "RR-015"
+  ],
+  "state": {
+    "proposed_actions": [
+      {
+        "id": "PA-ACT-001",
+        "summary": "Add and verify first-interaction AI notice",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT001"
+        ],
+        "action_id": "ACT-001",
+        "system_id": "AI-004",
+        "owner": "Learning Experience",
+        "responsible_role": "Learning Experience",
+        "proposed_due_date": "2026-09-04",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "planned",
+        "approval_role": "Operations",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-004-NOTICE"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-002",
+        "summary": "Resolve disclosure evidence conflict",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT002"
+        ],
+        "action_id": "ACT-002",
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "responsible_role": "Marketing",
+        "proposed_due_date": "2026-09-03",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "open",
+        "approval_role": "Operations",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-007-NOTICE"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-003",
+        "summary": "Confirm recipient disclosure practice",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003"
+        ],
+        "action_id": "ACT-003",
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "responsible_role": "Admissions",
+        "proposed_due_date": "2026-09-08",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "open",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-002-ART50",
+          "IMP-AI-002-STAFF-DRAFT"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-004",
+        "summary": "Verify machine-readable provenance after publishing",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT004"
+        ],
+        "action_id": "ACT-004",
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "responsible_role": "Communications",
+        "proposed_due_date": "2026-09-10",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "open",
+        "approval_role": "Operations",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-003-SYNTHETIC"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-005",
+        "summary": "Refresh provider-role and release evidence",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005"
+        ],
+        "action_id": "ACT-005",
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "responsible_role": "Assessment Operations",
+        "proposed_due_date": "2026-09-12",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "open",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-005-ART50",
+          "IMP-AI-005-EVIDENCE-CURRENCY"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-006",
+        "summary": "Complete provenance test",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT006"
+        ],
+        "action_id": "ACT-006",
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "responsible_role": "Communications",
+        "proposed_due_date": "2026-09-09",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "open",
+        "approval_role": "Operations",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-008-SYNTHETIC"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-ACT-007",
+        "summary": "Review exception request",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007"
+        ],
+        "action_id": "ACT-007",
+        "system_id": "AI-008",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": "2026-09-15",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "blocked",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-008-EXCEPTION"
+        ],
+        "rationale": "Existing calendar proposal carried forward unchanged.",
+        "blocked_note": "Calendar marks this action blocked; it stays tentative and needs the blocking decision first."
+      },
+      {
+        "id": "PA-ACT-008",
+        "summary": "Quarterly AI register evidence review",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT008"
+        ],
+        "action_id": "ACT-008",
+        "system_id": "ALL",
+        "owner": "Operations",
+        "responsible_role": "Operations",
+        "proposed_due_date": "2026-10-02",
+        "date_basis": "CALENDAR ['calendar-2026-08-26'] due_date (proposed; not changed by this automation)",
+        "calendar_status": "scheduled",
+        "approval_role": "Operations",
+        "approval_status": "pending",
+        "impact_ids": [],
+        "rationale": "Existing calendar proposal carried forward unchanged."
+      },
+      {
+        "id": "PA-NEW-AI-001-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "action_id": "PA-NEW-AI-001-ART50",
+        "system_id": "AI-001",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-001-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      },
+      {
+        "id": "PA-NEW-AI-003-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI003"
+        ],
+        "action_id": "PA-NEW-AI-003-ART50",
+        "system_id": "AI-003",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-003-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      },
+      {
+        "id": "PA-NEW-AI-004-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "action_id": "PA-NEW-AI-004-ART50",
+        "system_id": "AI-004",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-004-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      },
+      {
+        "id": "PA-NEW-AI-006-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI006"
+        ],
+        "action_id": "PA-NEW-AI-006-ART50",
+        "system_id": "AI-006",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-006-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      },
+      {
+        "id": "PA-NEW-AI-007-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "action_id": "PA-NEW-AI-007-ART50",
+        "system_id": "AI-007",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-007-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      },
+      {
+        "id": "PA-NEW-AI-008-ART50",
+        "summary": "Legal to address: Re-run with the binding OJ and amendment texts retrieved.",
+        "evidence_ids": [
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI008"
+        ],
+        "action_id": "PA-NEW-AI-008-ART50",
+        "system_id": "AI-008",
+        "owner": "Legal",
+        "responsible_role": "Legal",
+        "proposed_due_date": null,
+        "undated_reason": "No owner-approved date exists in CALENDAR; the automation does not invent deadlines.",
+        "approval_role": "Legal",
+        "approval_status": "pending",
+        "impact_ids": [
+          "IMP-AI-008-ART50"
+        ],
+        "rationale": "Impact needs an owner decision but no calendar action exists."
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "APR-IMP-AI-001-ART50",
+        "summary": "Legal review of IMP-AI-001-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-001-ART50",
+        "review_request_id": "RR-001"
+      },
+      {
+        "id": "APR-IMP-AI-001-NOTICE",
+        "summary": "No policy action proposed for IMP-AI-001-NOTICE",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC001",
+          "EV-POLICY-CTRLNOTICE"
+        ],
+        "status": "not-required",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-001-NOTICE"
+      },
+      {
+        "id": "APR-IMP-AI-002-ART50",
+        "summary": "Legal review of IMP-AI-002-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-POLICY-AI002",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI002"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-002-ART50",
+        "review_request_id": "RR-002"
+      },
+      {
+        "id": "APR-IMP-AI-002-STAFF-DRAFT",
+        "summary": "Operations review of IMP-AI-002-STAFF-DRAFT (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-EVIDENCE-REC002",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI002"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-002-STAFF-DRAFT",
+        "review_request_id": "RR-003"
+      },
+      {
+        "id": "APR-IMP-AI-003-ART50",
+        "summary": "Legal review of IMP-AI-003-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI003"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-003-ART50",
+        "review_request_id": "RR-004"
+      },
+      {
+        "id": "APR-IMP-AI-003-SYNTHETIC",
+        "summary": "Operations review of IMP-AI-003-SYNTHETIC (conflicting)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT004",
+          "EV-EVIDENCE-REC003",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI003"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-003-SYNTHETIC",
+        "review_request_id": "RR-005"
+      },
+      {
+        "id": "APR-IMP-AI-004-ART50",
+        "summary": "Legal review of IMP-AI-004-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-004-ART50",
+        "review_request_id": "RR-006"
+      },
+      {
+        "id": "APR-IMP-AI-004-NOTICE",
+        "summary": "Operations review of IMP-AI-004-NOTICE (supported-impact)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT001",
+          "EV-EVIDENCE-REC004",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-004-NOTICE",
+        "review_request_id": "RR-007"
+      },
+      {
+        "id": "APR-IMP-AI-005-ART50",
+        "summary": "Legal review of IMP-AI-005-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI005"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-005-ART50",
+        "review_request_id": "RR-008"
+      },
+      {
+        "id": "APR-IMP-AI-005-EVIDENCE-CURRENCY",
+        "summary": "Operations review of IMP-AI-005-EVIDENCE-CURRENCY (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-EVIDENCE-REC005",
+          "EV-EVIDENCE-REC006",
+          "EV-POLICY-CTRLREGISTER"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-005-EVIDENCE-CURRENCY",
+        "review_request_id": "RR-009"
+      },
+      {
+        "id": "APR-IMP-AI-006-ART50",
+        "summary": "Legal review of IMP-AI-006-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI006"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-006-ART50",
+        "review_request_id": "RR-010"
+      },
+      {
+        "id": "APR-IMP-AI-006-STAFF-DRAFT",
+        "summary": "No policy action proposed for IMP-AI-006-STAFF-DRAFT",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC007",
+          "EV-POLICY-CTRLSTAFFDRAFT"
+        ],
+        "status": "not-required",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-006-STAFF-DRAFT"
+      },
+      {
+        "id": "APR-IMP-AI-007-ART50",
+        "summary": "Legal review of IMP-AI-007-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-007-ART50",
+        "review_request_id": "RR-011"
+      },
+      {
+        "id": "APR-IMP-AI-007-NOTICE",
+        "summary": "Operations review of IMP-AI-007-NOTICE (conflicting)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT002",
+          "EV-EVIDENCE-REC008",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-007-NOTICE",
+        "review_request_id": "RR-012"
+      },
+      {
+        "id": "APR-IMP-AI-008-ART50",
+        "summary": "Legal review of IMP-AI-008-ART50 (unresolved)",
+        "evidence_ids": [
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI008"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-008-ART50",
+        "review_request_id": "RR-013"
+      },
+      {
+        "id": "APR-IMP-AI-008-SYNTHETIC",
+        "summary": "Operations review of IMP-AI-008-SYNTHETIC (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT006",
+          "EV-EVIDENCE-REC009",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLSYNTHETIC"
+        ],
+        "status": "pending",
+        "owner": "Operations",
+        "impact_id": "IMP-AI-008-SYNTHETIC",
+        "review_request_id": "RR-014"
+      },
+      {
+        "id": "APR-IMP-AI-008-EXCEPTION",
+        "summary": "Legal review of IMP-AI-008-EXCEPTION (unresolved)",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "status": "pending",
+        "owner": "Legal",
+        "impact_id": "IMP-AI-008-EXCEPTION",
+        "review_request_id": "RR-015"
+      }
+    ],
+    "escalations": [
+      {
+        "id": "ESC-IMP-AI-008-EXCEPTION",
+        "summary": "Draft exception request without Legal approval or expiry date",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "owner": "Legal",
+        "rationale": "Policy CTRL-EXCEPTION: only Legal can approve; the automation drafts nothing further."
+      },
+      {
+        "id": "ESC-AI-005-SCOPE",
+        "summary": "AI-005 biometric/emotion facts are open. If the flagging infers emotions of learners, questions outside Article 50 (e.g. Article 5 prohibitions) may arise; this review draws no conclusion on them.",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Legal",
+        "rationale": "Out of this review's Article 50 scope; flagged so Legal can decide whether a separate review is needed."
+      }
+    ],
+    "review_requests": [
+      {
+        "id": "RR-001",
+        "summary": "AI-001 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "subject": {
+          "system_id": "AI-001",
+          "impact_id": "IMP-AI-001-ART50",
+          "action_ids": [
+            "PA-NEW-AI-001-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-002",
+        "summary": "AI-002 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-POLICY-AI002",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI002"
+        ],
+        "subject": {
+          "system_id": "AI-002",
+          "impact_id": "IMP-AI-002-ART50",
+          "action_ids": [
+            "ACT-003"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-003",
+        "summary": "AI-002 AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-EVIDENCE-REC002",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI002"
+        ],
+        "subject": {
+          "system_id": "AI-002",
+          "impact_id": "IMP-AI-002-STAFF-DRAFT",
+          "action_ids": [
+            "ACT-003"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-004",
+        "summary": "AI-003 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI003"
+        ],
+        "subject": {
+          "system_id": "AI-003",
+          "impact_id": "IMP-AI-003-ART50",
+          "action_ids": [
+            "PA-NEW-AI-003-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-005",
+        "summary": "AI-003 AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT004",
+          "EV-EVIDENCE-REC003",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI003"
+        ],
+        "subject": {
+          "system_id": "AI-003",
+          "impact_id": "IMP-AI-003-SYNTHETIC",
+          "action_ids": [
+            "ACT-004"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "Which account is current, and does the proposed action resolve the conflict?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-006",
+        "summary": "AI-004 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "subject": {
+          "system_id": "AI-004",
+          "impact_id": "IMP-AI-004-ART50",
+          "action_ids": [
+            "PA-NEW-AI-004-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-007",
+        "summary": "AI-004 AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT001",
+          "EV-EVIDENCE-REC004",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "subject": {
+          "system_id": "AI-004",
+          "impact_id": "IMP-AI-004-NOTICE",
+          "action_ids": [
+            "ACT-001"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "Do you accept this supported impact and the proposed action/date?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-008",
+        "summary": "AI-005 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI005"
+        ],
+        "subject": {
+          "system_id": "AI-005",
+          "impact_id": "IMP-AI-005-ART50",
+          "action_ids": [
+            "ACT-005"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-009",
+        "summary": "AI-005 AI-POL-2026-08-15: Evidence and exceptions [CTRL-REGISTER]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-EVIDENCE-REC005",
+          "EV-EVIDENCE-REC006",
+          "EV-POLICY-CTRLREGISTER"
+        ],
+        "subject": {
+          "system_id": "AI-005",
+          "impact_id": "IMP-AI-005-EVIDENCE-CURRENCY",
+          "action_ids": [
+            "ACT-005"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-010",
+        "summary": "AI-006 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI006"
+        ],
+        "subject": {
+          "system_id": "AI-006",
+          "impact_id": "IMP-AI-006-ART50",
+          "action_ids": [
+            "PA-NEW-AI-006-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-011",
+        "summary": "AI-007 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "subject": {
+          "system_id": "AI-007",
+          "impact_id": "IMP-AI-007-ART50",
+          "action_ids": [
+            "PA-NEW-AI-007-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-012",
+        "summary": "AI-007 AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT002",
+          "EV-EVIDENCE-REC008",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "subject": {
+          "system_id": "AI-007",
+          "impact_id": "IMP-AI-007-NOTICE",
+          "action_ids": [
+            "ACT-002"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "Which account is current, and does the proposed action resolve the conflict?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-013",
+        "summary": "AI-008 EU AI Act Art. 50",
+        "evidence_ids": [
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI008"
+        ],
+        "subject": {
+          "system_id": "AI-008",
+          "impact_id": "IMP-AI-008-ART50",
+          "action_ids": [
+            "PA-NEW-AI-008-ART50"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-014",
+        "summary": "AI-008 AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT006",
+          "EV-EVIDENCE-REC009",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLSYNTHETIC"
+        ],
+        "subject": {
+          "system_id": "AI-008",
+          "impact_id": "IMP-AI-008-SYNTHETIC",
+          "action_ids": [
+            "ACT-006"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Operations",
+        "owner": "Operations",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      },
+      {
+        "id": "RR-015",
+        "summary": "AI-008 AI-POL-2026-08-15: Evidence and exceptions [CTRL-EXCEPTION]",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "subject": {
+          "system_id": "AI-008",
+          "impact_id": "IMP-AI-008-EXCEPTION",
+          "action_ids": [
+            "ACT-007"
+          ]
+        },
+        "run_id": "RUN-20261012T195534Z",
+        "source_versions": {
+          "SRC-ART50-SD": "2026-07-27",
+          "SRC-LAW-OJ": null,
+          "SRC-LAW-AMEND": null,
+          "SRC-LAW-CONS": null,
+          "SRC-TIMELINE": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+          "SRC-GUIDANCE": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+          "SRC-POLICY": "AI-POL-2026-08-15",
+          "SRC-SYSTEMS": "register-2026-08-26",
+          "SRC-EVIDENCE": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+          "SRC-CALENDAR": "calendar-2026-08-26"
+        },
+        "question": "What evidence or decision resolves this item, and who supplies it?",
+        "required_reviewer": "Legal",
+        "owner": "Legal",
+        "status": "prepared-not-sent",
+        "note": "Prepared in the draft package; not sent. No reply is simulated."
+      }
+    ],
+    "received_feedback": [],
+    "feedback_note": "No reviewer feedback has been received through the facilitator's verified channel; all approvals remain pending."
+  },
+  "unresolved": [
+    {
+      "id": "ESC-IMP-AI-008-EXCEPTION",
+      "summary": "Draft exception request without Legal approval or expiry date",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT007",
+        "EV-EVIDENCE-REC010",
+        "EV-POLICY-CTRLEXCEPTION"
+      ],
+      "owner": "Legal",
+      "rationale": "Policy CTRL-EXCEPTION: only Legal can approve; the automation drafts nothing further."
+    },
+    {
+      "id": "ESC-AI-005-SCOPE",
+      "summary": "AI-005 biometric/emotion facts are open. If the flagging infers emotions of learners, questions outside Article 50 (e.g. Article 5 prohibitions) may arise; this review draws no conclusion on them.",
+      "evidence_ids": [
+        "EV-SYSTEMS-AI005",
+        "EV-POLICY-AI005",
+        "EV-POLICY-OPERATINGSCOPE"
+      ],
+      "owner": "Legal",
+      "rationale": "Out of this review's Article 50 scope; flagged so Legal can decide whether a separate review is needed."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-07",
+      "stage": "actions-and-approvals",
+      "summary": "Dates only from CALENDAR; undated proposals stay out of the .ics",
+      "concern": "The automation could propose its own deadlines.",
+      "options": [
+        "Invent target dates",
+        "Carry calendar dates forward unchanged and leave new proposals undated"
+      ],
+      "source_basis": "Interview 03:32 PM (owners and dates live in the calendar sheet); policy approval boundary (may not change a production deadline).",
+      "chosen_behavior": "Calendar actions become TENTATIVE events; new needs are undated proposals explained in register and brief.",
+      "rationale": "Operations owns operational deadlines.",
+      "tradeoffs": [
+        "Some needs (e.g. AI-008 Art. 50(4) confirmation) have no date until an owner sets one"
+      ],
+      "downstream_effect": "action-calendar.ics contains only calendar-backed dates.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

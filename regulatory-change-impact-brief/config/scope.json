@@ -1,0 +1,13 @@
+{
+  "review_type": "EU AI Act Article 50 transparency change-impact review (draft package for Legal and Operations)",
+  "systems_in_scope": ["AI-001", "AI-002", "AI-003", "AI-004", "AI-005", "AI-006", "AI-007", "AI-008"],
+  "scope_basis": "Policy operating facts: the EU programme team 'administers all eight registered uses'; interview 03:29 PM: confirm uses, roles, exposed groups, disclosure and human review 'for all scoped AI systems'.",
+  "audiences": ["Legal", "Operations"],
+  "approval_gates": [
+    "Legal: final interpretation of the EU AI Act, every statutory conclusion and any exception approval",
+    "Operations: policy activation, approved dates and incident closure",
+    "System owners: correction of evidence"
+  ],
+  "out_of_scope_actions": ["final legal advice", "policy activation", "changing approved deadlines", "closing incidents", "sending official responses", "writing to a production calendar", "approving exceptions"],
+  "interview_file": "interviews/project-b-regulatory-compliance-20261012-1939.md"
+}

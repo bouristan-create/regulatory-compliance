@@ -1,0 +1,528 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T201652Z-S07",
+  "run_id": "RUN-20261012T201652Z",
+  "stage": "publication-validation",
+  "sequence": 7,
+  "created_at": "2026-10-12T20:20:07Z",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T201652Z-S06",
+    "path": "deliverables/snapshots/06-actions-and-approvals.json",
+    "sha256": "sha256:521c56409166b267f1cd67beed03bf165db8d8dc148f0228d64568cf0242beee"
+  },
+  "consumed_record_ids": [
+    "IMP-AI-001-ART50",
+    "IMP-AI-001-NOTICE",
+    "IMP-AI-002-ART50",
+    "IMP-AI-002-STAFF-DRAFT",
+    "IMP-AI-003-ART50",
+    "IMP-AI-003-SYNTHETIC",
+    "IMP-AI-004-ART50",
+    "IMP-AI-004-NOTICE",
+    "IMP-AI-005-ART50",
+    "IMP-AI-005-EVIDENCE-CURRENCY",
+    "IMP-AI-006-ART50",
+    "IMP-AI-006-STAFF-DRAFT",
+    "IMP-AI-007-ART50",
+    "IMP-AI-007-NOTICE",
+    "IMP-AI-008-ART50",
+    "IMP-AI-008-EXCEPTION",
+    "IMP-AI-008-SYNTHETIC",
+    "RR-001",
+    "RR-002",
+    "RR-003",
+    "RR-004",
+    "RR-005",
+    "RR-006",
+    "RR-007",
+    "RR-008",
+    "RR-009",
+    "RR-010",
+    "RR-011",
+    "RR-012",
+    "RR-013",
+    "RR-014",
+    "RR-015"
+  ],
+  "produced_record_ids": [
+    "ART-BRIEF",
+    "ART-CALENDAR",
+    "ART-REGISTER",
+    "CHK-BRIEF-CITES-IMPACTS",
+    "CHK-BRIEF-EXISTS",
+    "CHK-CAPTURE-SRC-ART50-SD",
+    "CHK-CAPTURE-SRC-CALENDAR",
+    "CHK-CAPTURE-SRC-EVIDENCE",
+    "CHK-CAPTURE-SRC-GUIDANCE",
+    "CHK-CAPTURE-SRC-POLICY",
+    "CHK-CAPTURE-SRC-SYSTEMS",
+    "CHK-CAPTURE-SRC-TIMELINE",
+    "CHK-CONSUMED-S02",
+    "CHK-CONSUMED-S03",
+    "CHK-CONSUMED-S04",
+    "CHK-CONSUMED-S05",
+    "CHK-CONSUMED-S06",
+    "CHK-EVIDENCE-RESOLVES",
+    "CHK-ICS-AGREES",
+    "CHK-ICS-CRLF",
+    "CHK-ICS-EVENTS",
+    "CHK-ICS-HEADER",
+    "CHK-ICS-UID-UNIQUE",
+    "CHK-REG-APPROVAL",
+    "CHK-REG-DATES",
+    "CHK-REG-HEADER",
+    "CHK-REG-MATCH-S05",
+    "CHK-REG-STATES",
+    "CHK-REG-UNIQUE",
+    "CHK-RUN-ID-AGREES",
+    "CHK-SCHEMA-S01",
+    "CHK-SCHEMA-S02",
+    "CHK-SCHEMA-S03",
+    "CHK-SCHEMA-S04",
+    "CHK-SCHEMA-S05",
+    "CHK-SCHEMA-S06"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "ART-REGISTER",
+        "path": "deliverables/impact-register.csv",
+        "sha256": "sha256:17ab87053c508967d7cc8b1a61f1178cc0fe48b91a0f17c0466184587cad320b",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-BRIEF",
+        "path": "deliverables/compliance-brief.md",
+        "sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-CALENDAR",
+        "path": "deliverables/action-calendar.ics",
+        "sha256": "sha256:7eee5d3f2455ee9a4dec5b9f2c6dc522fd63a3a88d310df811ba1c95e1dc7d88",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "CHK-REG-HEADER",
+        "summary": "Register has the required columns in order",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-REG-STATES",
+        "summary": "Register states use the schema vocabulary",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-REG-APPROVAL",
+        "summary": "Register approval statuses use the schema vocabulary",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-REG-DATES",
+        "summary": "Register dates are YYYY-MM-DD or blank",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-REG-UNIQUE",
+        "summary": "Impact IDs are unique",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-REG-MATCH-S05",
+        "summary": "Register rows match stage 05 impacts",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-BRIEF-EXISTS",
+        "summary": "compliance-brief.md present",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-BRIEF-CITES-IMPACTS",
+        "summary": "Brief cites every register impact ID (missing: [])",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-RUN-ID-AGREES",
+        "summary": "Register and brief carry the same run ID",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-ICS-CRLF",
+        "summary": "Calendar uses CRLF line endings",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-ICS-HEADER",
+        "summary": "VCALENDAR with VERSION and PRODID",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-ICS-EVENTS",
+        "summary": "8 events carry UID, DTSTAMP, all-day DTSTART, SUMMARY, DESCRIPTION, STATUS:TENTATIVE",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-ICS-UID-UNIQUE",
+        "summary": "Calendar UIDs are unique and action-linked",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-ICS-AGREES",
+        "summary": "Every calendar action appears in the register or brief (orphans: [])",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S01",
+        "summary": "01-scope.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S01"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S02",
+        "summary": "02-source-capture.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S02"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S03",
+        "summary": "03-authority-and-timing.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S03"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S04",
+        "summary": "04-evidence-reconciliation.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S04"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S05",
+        "summary": "05-impact-analysis.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S05"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-SCHEMA-S06",
+        "summary": "06-actions-and-approvals.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S06"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CONSUMED-S02",
+        "summary": "source-capture consumed IDs resolve upstream",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S02"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CONSUMED-S03",
+        "summary": "authority-and-timing consumed IDs resolve upstream",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S03"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CONSUMED-S04",
+        "summary": "evidence-reconciliation consumed IDs resolve upstream",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S04"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CONSUMED-S05",
+        "summary": "impact-analysis consumed IDs resolve upstream",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S05"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CONSUMED-S06",
+        "summary": "actions-and-approvals consumed IDs resolve upstream",
+        "evidence_ids": [
+          "RUN-20261012T201652Z-S06"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-EVIDENCE-RESOLVES",
+        "summary": "Every impact evidence ID resolves to a captured extract or source attempt",
+        "evidence_ids": [],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-ART50-SD",
+        "summary": "Captured bytes for SRC-ART50-SD match the recorded hash",
+        "evidence_ids": [
+          "SRC-ART50-SD#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-TIMELINE",
+        "summary": "Captured bytes for SRC-TIMELINE match the recorded hash",
+        "evidence_ids": [
+          "SRC-TIMELINE#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-GUIDANCE",
+        "summary": "Captured bytes for SRC-GUIDANCE match the recorded hash",
+        "evidence_ids": [
+          "SRC-GUIDANCE#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-POLICY",
+        "summary": "Captured bytes for SRC-POLICY match the recorded hash",
+        "evidence_ids": [
+          "SRC-POLICY#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-SYSTEMS",
+        "summary": "Captured bytes for SRC-SYSTEMS match the recorded hash",
+        "evidence_ids": [
+          "SRC-SYSTEMS#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-EVIDENCE",
+        "summary": "Captured bytes for SRC-EVIDENCE match the recorded hash",
+        "evidence_ids": [
+          "SRC-EVIDENCE#A1"
+        ],
+        "result": "pass"
+      },
+      {
+        "id": "CHK-CAPTURE-SRC-CALENDAR",
+        "summary": "Captured bytes for SRC-CALENDAR match the recorded hash",
+        "evidence_ids": [
+          "SRC-CALENDAR#A1"
+        ],
+        "result": "pass"
+      }
+    ],
+    "publication_status": "blocked",
+    "publication_note": "'validated' means the draft package passed internal validation. It is not a human approval or an external publication.",
+    "review_request_bindings": [
+      {
+        "review_request_id": "RR-001",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-001-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-002",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-002-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-003",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-002-STAFF-DRAFT",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-004",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-003-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-005",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-003-SYNTHETIC",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-006",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-004-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-007",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-004-NOTICE",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-008",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-005-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-009",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-005-EVIDENCE-CURRENCY",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-010",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-006-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-011",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-007-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-012",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-007-NOTICE",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-013",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-008-ART50",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-014",
+        "required_reviewer": "Operations",
+        "impact_id": "IMP-AI-008-SYNTHETIC",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      },
+      {
+        "review_request_id": "RR-015",
+        "required_reviewer": "Legal",
+        "impact_id": "IMP-AI-008-EXCEPTION",
+        "reviewed_artifact_path": "deliverables/compliance-brief.md",
+        "reviewed_artifact_sha256": "sha256:bb37633b9200f6a5b37b7340418a8fb50cec1e8ad8d0026cdc2ef5517bc5b8a7",
+        "run_id": "RUN-20261012T201652Z",
+        "status": "prepared-not-sent"
+      }
+    ],
+    "run_status": "blocked",
+    "technical_failures": [
+      {
+        "stage": "source-capture",
+        "source_id": "SRC-LAW-OJ",
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "recovery": "Re-run the documented command; if it persists, report the unavailable route to the source owner / facilitator."
+      },
+      {
+        "stage": "source-capture",
+        "source_id": "SRC-LAW-AMEND",
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "recovery": "Re-run the documented command; if it persists, report the unavailable route to the source owner / facilitator."
+      },
+      {
+        "stage": "source-capture",
+        "source_id": "SRC-LAW-CONS",
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "recovery": "Re-run the documented command; if it persists, report the unavailable route to the source owner / facilitator."
+      }
+    ]
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "DEC-08",
+      "stage": "publication-validation",
+      "summary": "Validated means internally consistent, not approved",
+      "concern": "A green validation could be read as sign-off.",
+      "options": [
+        "Report 'published'",
+        "Report 'validated' with an explicit note and pending approvals"
+      ],
+      "source_basis": "Assignment publication rules; interview 03:33 PM (no delivery claimed without evidence).",
+      "chosen_behavior": "Stage 07 checks schema, chain, hashes and cross-file agreement; review requests are bound to the brief hash and marked prepared-not-sent.",
+      "rationale": "Reviewers must be able to tell exactly which draft they are asked to approve.",
+      "tradeoffs": [
+        "Every rerun changes the brief hash, so earlier requests no longer match"
+      ],
+      "downstream_effect": "Unmatched future feedback stays unresolved.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

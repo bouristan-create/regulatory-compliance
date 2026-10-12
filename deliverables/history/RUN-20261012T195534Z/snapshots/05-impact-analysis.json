@@ -1,0 +1,873 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T195534Z-S05",
+  "run_id": "RUN-20261012T195534Z",
+  "stage": "impact-analysis",
+  "sequence": 5,
+  "created_at": "2026-10-12T19:55:37Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T195534Z-S04",
+    "path": "deliverables/snapshots/04-evidence-reconciliation.json",
+    "sha256": "sha256:558272de2ce25321de3d6e4378c199a2c7224c2acfdacc428858f0a9c15a93b8"
+  },
+  "consumed_record_ids": [
+    "CTRL-BOUNDARY",
+    "CTRL-EVIDENCE-STATES",
+    "CTRL-EXCEPTION",
+    "CTRL-NOTICE",
+    "CTRL-REGISTER",
+    "CTRL-STAFF-DRAFT",
+    "CTRL-SYNTHETIC",
+    "FACT-AI-001",
+    "FACT-AI-002",
+    "FACT-AI-003",
+    "FACT-AI-004",
+    "FACT-AI-005",
+    "FACT-AI-006",
+    "FACT-AI-007",
+    "FACT-AI-008",
+    "REC-001",
+    "REC-002",
+    "REC-003",
+    "REC-004",
+    "REC-005",
+    "REC-006",
+    "REC-007",
+    "REC-008",
+    "REC-009",
+    "REC-010"
+  ],
+  "produced_record_ids": [
+    "CONF-AI-003-SYNTHETIC",
+    "CONF-AI-007-NOTICE",
+    "IMP-AI-001-ART50",
+    "IMP-AI-001-NOTICE",
+    "IMP-AI-002-ART50",
+    "IMP-AI-002-STAFF-DRAFT",
+    "IMP-AI-003-ART50",
+    "IMP-AI-003-SYNTHETIC",
+    "IMP-AI-004-ART50",
+    "IMP-AI-004-NOTICE",
+    "IMP-AI-005-ART50",
+    "IMP-AI-005-EVIDENCE-CURRENCY",
+    "IMP-AI-006-ART50",
+    "IMP-AI-006-STAFF-DRAFT",
+    "IMP-AI-007-ART50",
+    "IMP-AI-007-NOTICE",
+    "IMP-AI-008-ART50",
+    "IMP-AI-008-EXCEPTION",
+    "IMP-AI-008-SYNTHETIC",
+    "UNAFF-AI-001-NOTICE",
+    "UNAFF-AI-006-STAFF-DRAFT",
+    "UNR-AI-001-ART50",
+    "UNR-AI-002-ART50",
+    "UNR-AI-002-STAFF-DRAFT",
+    "UNR-AI-003-ART50",
+    "UNR-AI-004-ART50",
+    "UNR-AI-005-ART50",
+    "UNR-AI-005-EVIDENCE-CURRENCY",
+    "UNR-AI-006-ART50",
+    "UNR-AI-007-ART50",
+    "UNR-AI-008-ART50",
+    "UNR-AI-008-EXCEPTION",
+    "UNR-AI-008-SYNTHETIC"
+  ],
+  "state": {
+    "impacts": [
+      {
+        "id": "IMP-AI-001-ART50",
+        "summary": "AI-001 Learner Support Chat — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-001",
+        "system_name": "Learner Support Chat",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-001-NOTICE",
+        "summary": "AI-001 Learner Support Chat — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: supported-no-impact",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC001",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-001",
+        "system_name": "Learner Support Chat",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Learner Operations",
+        "rationale": "Notice in place and evidence complete: Notice screenshot and release record agree.",
+        "resolution_need": null,
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-002-ART50",
+        "summary": "AI-002 Admissions Draft Assistant — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-POLICY-AI002",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI002"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-002",
+        "system_name": "Admissions Draft Assistant",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": [
+          "ACT-003"
+        ]
+      },
+      {
+        "id": "IMP-AI-002-STAFF-DRAFT",
+        "summary": "AI-002 Admissions Draft Assistant — AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-EVIDENCE-REC002",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI002"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-002",
+        "system_name": "Admissions Draft Assistant",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Admissions",
+        "rationale": "Owner has not recorded how generated material reaches recipients: No evidence that recipients are told when generated text is used. Missing evidence is not converted to compliance or non-compliance.",
+        "resolution_need": "Owner records the recipient disclosure practice; Legal confirms.",
+        "action_ids": [
+          "ACT-003"
+        ]
+      },
+      {
+        "id": "IMP-AI-003-ART50",
+        "summary": "AI-003 Campaign Image Studio — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI003"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-003",
+        "system_name": "Campaign Image Studio",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-003-SYNTHETIC",
+        "summary": "AI-003 Campaign Image Studio — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: conflicting",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT004",
+          "EV-EVIDENCE-REC003",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI003"
+        ],
+        "state": "conflicting",
+        "system_id": "AI-003",
+        "system_name": "Campaign Image Studio",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Communications",
+        "rationale": "Visible label recorded but provenance evidence conflicts: Visible label exists but exported platform copy may have lost metadata. A visible label does not prove machine-readable provenance.",
+        "resolution_need": "Communications verifies provenance on the published copy.",
+        "action_ids": [
+          "ACT-004"
+        ]
+      },
+      {
+        "id": "IMP-AI-004-ART50",
+        "summary": "AI-004 Pronunciation Coach — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-004",
+        "system_name": "Pronunciation Coach",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-004-NOTICE",
+        "summary": "AI-004 Pronunciation Coach — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: supported-impact",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT001",
+          "EV-EVIDENCE-REC004",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "state": "supported-impact",
+        "system_id": "AI-004",
+        "system_name": "Pronunciation Coach",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Learning Experience",
+        "rationale": "No first-interaction AI notice; confirmed by evidence: First interaction contains no AI notice.",
+        "resolution_need": null,
+        "action_ids": [
+          "ACT-001"
+        ]
+      },
+      {
+        "id": "IMP-AI-005-ART50",
+        "summary": "AI-005 Remote Proctor Signal — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI005"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "system_name": "Remote Proctor Signal",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "IMP-AI-005-EVIDENCE-CURRENCY",
+        "summary": "AI-005 Remote Proctor Signal — AI-POL-2026-08-15: Evidence and exceptions [CTRL-REGISTER]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-EVIDENCE-REC005",
+          "EV-EVIDENCE-REC006",
+          "EV-POLICY-CTRLREGISTER",
+          "EV-SYSTEMS-AI005"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "system_name": "Remote Proctor Signal",
+        "rule_ref": "AI-POL-2026-08-15: Evidence and exceptions [CTRL-REGISTER]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Assessment Operations",
+        "rationale": "Evidence is stale (last updated 2026-04-15): Provider role questionnaire predates the current release.",
+        "resolution_need": "Owner refreshes role and release evidence for the current release.",
+        "action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "IMP-AI-006-ART50",
+        "summary": "AI-006 Staff Summary Assistant — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI006"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-006",
+        "system_name": "Staff Summary Assistant",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-006-STAFF-DRAFT",
+        "summary": "AI-006 Staff Summary Assistant — AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]: supported-no-impact",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC007",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI006"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-006",
+        "system_name": "Staff Summary Assistant",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "People Operations",
+        "rationale": "Staff-only use, outputs not sent outside the staff workspace; evidence complete.",
+        "resolution_need": null,
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-007-ART50",
+        "summary": "AI-007 Website Guide Avatar — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-007",
+        "system_name": "Website Guide Avatar",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-007-NOTICE",
+        "summary": "AI-007 Website Guide Avatar — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: conflicting",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT002",
+          "EV-EVIDENCE-REC008",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "state": "conflicting",
+        "system_id": "AI-007",
+        "system_name": "Website Guide Avatar",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Marketing",
+        "rationale": "Register says notice='no' but evidence conflicts: Owner says a banner exists but the current capture shows none. The stylised graphic alone does not establish what visitors understand.",
+        "resolution_need": "System owner resolves which account of the notice is current.",
+        "action_ids": [
+          "ACT-002"
+        ]
+      },
+      {
+        "id": "IMP-AI-008-ART50",
+        "summary": "AI-008 Video Localisation Tool — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI008"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "system_name": "Video Localisation Tool",
+        "rule_ref": "EU AI Act Art. 50",
+        "rule_basis": "statutory (EU AI Act, binding)",
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "action_ids": []
+      },
+      {
+        "id": "IMP-AI-008-SYNTHETIC",
+        "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT006",
+          "EV-EVIDENCE-REC009",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI008"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "system_name": "Video Localisation Tool",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Communications",
+        "rationale": "Label state 'visible_label'; provenance not verified: Visible label verified but machine-readable provenance not checked.",
+        "resolution_need": "Communications completes the provenance test.",
+        "action_ids": [
+          "ACT-006"
+        ]
+      },
+      {
+        "id": "IMP-AI-008-EXCEPTION",
+        "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Evidence and exceptions [CTRL-EXCEPTION]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "system_name": "Video Localisation Tool",
+        "rule_ref": "AI-POL-2026-08-15: Evidence and exceptions [CTRL-EXCEPTION]",
+        "rule_basis": "internal policy (internal control)",
+        "owner": "Legal",
+        "rationale": "Exception request REC-010 is draft: No Legal approval or expiry date recorded. The automation may not approve it.",
+        "resolution_need": "Legal decides the exception; it needs a named owner, rationale, expiry date and Legal approval.",
+        "action_ids": [
+          "ACT-007"
+        ]
+      }
+    ],
+    "unaffected_items": [
+      {
+        "id": "UNAFF-AI-001-NOTICE",
+        "summary": "AI-001 Learner Support Chat — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: supported-no-impact",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC001",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Notice in place and evidence complete: Notice screenshot and release record agree.",
+        "impact_id": "IMP-AI-001-NOTICE"
+      },
+      {
+        "id": "UNAFF-AI-006-STAFF-DRAFT",
+        "summary": "AI-006 Staff Summary Assistant — AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]: supported-no-impact",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC007",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI006"
+        ],
+        "owner": "People Operations",
+        "rationale": "Staff-only use, outputs not sent outside the staff workspace; evidence complete.",
+        "impact_id": "IMP-AI-006-STAFF-DRAFT"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "CONF-AI-003-SYNTHETIC",
+        "summary": "AI-003 Campaign Image Studio — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: conflicting",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT004",
+          "EV-EVIDENCE-REC003",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI003"
+        ],
+        "owner": "Communications",
+        "rationale": "Visible label recorded but provenance evidence conflicts: Visible label exists but exported platform copy may have lost metadata. A visible label does not prove machine-readable provenance.",
+        "resolution_need": "Communications verifies provenance on the published copy.",
+        "impact_id": "IMP-AI-003-SYNTHETIC"
+      },
+      {
+        "id": "CONF-AI-007-NOTICE",
+        "summary": "AI-007 Website Guide Avatar — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: conflicting",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT002",
+          "EV-EVIDENCE-REC008",
+          "EV-POLICY-CTRLNOTICE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "owner": "Marketing",
+        "rationale": "Register says notice='no' but evidence conflicts: Owner says a banner exists but the current capture shows none. The stylised graphic alone does not establish what visitors understand.",
+        "resolution_need": "System owner resolves which account of the notice is current.",
+        "impact_id": "IMP-AI-007-NOTICE"
+      }
+    ],
+    "unresolved_items": [
+      {
+        "id": "UNR-AI-001-ART50",
+        "summary": "AI-001 Learner Support Chat — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI001"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-001-ART50"
+      },
+      {
+        "id": "UNR-AI-002-ART50",
+        "summary": "AI-002 Admissions Draft Assistant — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-POLICY-AI002",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI002"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-002-ART50"
+      },
+      {
+        "id": "UNR-AI-002-STAFF-DRAFT",
+        "summary": "AI-002 Admissions Draft Assistant — AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT003",
+          "EV-EVIDENCE-REC002",
+          "EV-POLICY-CTRLSTAFFDRAFT",
+          "EV-SYSTEMS-AI002"
+        ],
+        "owner": "Admissions",
+        "rationale": "Owner has not recorded how generated material reaches recipients: No evidence that recipients are told when generated text is used. Missing evidence is not converted to compliance or non-compliance.",
+        "resolution_need": "Owner records the recipient disclosure practice; Legal confirms.",
+        "impact_id": "IMP-AI-002-STAFF-DRAFT"
+      },
+      {
+        "id": "UNR-AI-003-ART50",
+        "summary": "AI-003 Campaign Image Studio — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI003"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-003-ART50"
+      },
+      {
+        "id": "UNR-AI-004-ART50",
+        "summary": "AI-004 Pronunciation Coach — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI004"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-004-ART50"
+      },
+      {
+        "id": "UNR-AI-005-ART50",
+        "summary": "AI-005 Remote Proctor Signal — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI005"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-005-ART50"
+      },
+      {
+        "id": "UNR-AI-005-EVIDENCE-CURRENCY",
+        "summary": "AI-005 Remote Proctor Signal — AI-POL-2026-08-15: Evidence and exceptions [CTRL-REGISTER]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT005",
+          "EV-EVIDENCE-REC005",
+          "EV-EVIDENCE-REC006",
+          "EV-POLICY-CTRLREGISTER",
+          "EV-SYSTEMS-AI005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Evidence is stale (last updated 2026-04-15): Provider role questionnaire predates the current release.",
+        "resolution_need": "Owner refreshes role and release evidence for the current release.",
+        "impact_id": "IMP-AI-005-EVIDENCE-CURRENCY"
+      },
+      {
+        "id": "UNR-AI-006-ART50",
+        "summary": "AI-006 Staff Summary Assistant — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI006"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-006-ART50"
+      },
+      {
+        "id": "UNR-AI-007-ART50",
+        "summary": "AI-007 Website Guide Avatar — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI007"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-007-ART50"
+      },
+      {
+        "id": "UNR-AI-008-ART50",
+        "summary": "AI-008 Video Localisation Tool — EU AI Act Art. 50: unresolved",
+        "evidence_ids": [
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE",
+          "EV-SYSTEMS-AI008"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+        "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+        "impact_id": "IMP-AI-008-ART50"
+      },
+      {
+        "id": "UNR-AI-008-SYNTHETIC",
+        "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT006",
+          "EV-EVIDENCE-REC009",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLSYNTHETIC",
+          "EV-SYSTEMS-AI008"
+        ],
+        "owner": "Communications",
+        "rationale": "Label state 'visible_label'; provenance not verified: Visible label verified but machine-readable provenance not checked.",
+        "resolution_need": "Communications completes the provenance test.",
+        "impact_id": "IMP-AI-008-SYNTHETIC"
+      },
+      {
+        "id": "UNR-AI-008-EXCEPTION",
+        "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Evidence and exceptions [CTRL-EXCEPTION]: unresolved",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT007",
+          "EV-EVIDENCE-REC010",
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "owner": "Legal",
+        "rationale": "Exception request REC-010 is draft: No Legal approval or expiry date recorded. The automation may not approve it.",
+        "resolution_need": "Legal decides the exception; it needs a named owner, rationale, expiry date and Legal approval.",
+        "impact_id": "IMP-AI-008-EXCEPTION"
+      }
+    ],
+    "scope_note": "Statutory rows assess Quillhaven's own Article 50 duties as of the review date; internal-policy rows assess AI-POL controls. They are kept as separate rule bases."
+  },
+  "unresolved": [
+    {
+      "id": "CONF-AI-003-SYNTHETIC",
+      "summary": "AI-003 Campaign Image Studio — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: conflicting",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT004",
+        "EV-EVIDENCE-REC003",
+        "EV-POLICY-CTRLSYNTHETIC",
+        "EV-SYSTEMS-AI003"
+      ],
+      "owner": "Communications",
+      "rationale": "Visible label recorded but provenance evidence conflicts: Visible label exists but exported platform copy may have lost metadata. A visible label does not prove machine-readable provenance.",
+      "resolution_need": "Communications verifies provenance on the published copy.",
+      "impact_id": "IMP-AI-003-SYNTHETIC"
+    },
+    {
+      "id": "CONF-AI-007-NOTICE",
+      "summary": "AI-007 Website Guide Avatar — AI-POL-2026-08-15: Learner and public transparency [CTRL-NOTICE]: conflicting",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT002",
+        "EV-EVIDENCE-REC008",
+        "EV-POLICY-CTRLNOTICE",
+        "EV-SYSTEMS-AI007"
+      ],
+      "owner": "Marketing",
+      "rationale": "Register says notice='no' but evidence conflicts: Owner says a banner exists but the current capture shows none. The stylised graphic alone does not establish what visitors understand.",
+      "resolution_need": "System owner resolves which account of the notice is current.",
+      "impact_id": "IMP-AI-007-NOTICE"
+    },
+    {
+      "id": "UNR-AI-001-ART50",
+      "summary": "AI-001 Learner Support Chat — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI001",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI001"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-001-ART50"
+    },
+    {
+      "id": "UNR-AI-002-ART50",
+      "summary": "AI-002 Admissions Draft Assistant — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT003",
+        "EV-POLICY-AI002",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI002"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-002-ART50"
+    },
+    {
+      "id": "UNR-AI-002-STAFF-DRAFT",
+      "summary": "AI-002 Admissions Draft Assistant — AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-DRAFT]: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT003",
+        "EV-EVIDENCE-REC002",
+        "EV-POLICY-CTRLSTAFFDRAFT",
+        "EV-SYSTEMS-AI002"
+      ],
+      "owner": "Admissions",
+      "rationale": "Owner has not recorded how generated material reaches recipients: No evidence that recipients are told when generated text is used. Missing evidence is not converted to compliance or non-compliance.",
+      "resolution_need": "Owner records the recipient disclosure practice; Legal confirms.",
+      "impact_id": "IMP-AI-002-STAFF-DRAFT"
+    },
+    {
+      "id": "UNR-AI-003-ART50",
+      "summary": "AI-003 Campaign Image Studio — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI003",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI003"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-003-ART50"
+    },
+    {
+      "id": "UNR-AI-004-ART50",
+      "summary": "AI-004 Pronunciation Coach — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI004",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI004"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-004-ART50"
+    },
+    {
+      "id": "UNR-AI-005-ART50",
+      "summary": "AI-005 Remote Proctor Signal — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT005",
+        "EV-POLICY-AI005",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI005"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-005-ART50"
+    },
+    {
+      "id": "UNR-AI-005-EVIDENCE-CURRENCY",
+      "summary": "AI-005 Remote Proctor Signal — AI-POL-2026-08-15: Evidence and exceptions [CTRL-REGISTER]: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT005",
+        "EV-EVIDENCE-REC005",
+        "EV-EVIDENCE-REC006",
+        "EV-POLICY-CTRLREGISTER",
+        "EV-SYSTEMS-AI005"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Evidence is stale (last updated 2026-04-15): Provider role questionnaire predates the current release.",
+      "resolution_need": "Owner refreshes role and release evidence for the current release.",
+      "impact_id": "IMP-AI-005-EVIDENCE-CURRENCY"
+    },
+    {
+      "id": "UNR-AI-006-ART50",
+      "summary": "AI-006 Staff Summary Assistant — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI006",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI006"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-006-ART50"
+    },
+    {
+      "id": "UNR-AI-007-ART50",
+      "summary": "AI-007 Website Guide Avatar — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI007",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI007"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-007-ART50"
+    },
+    {
+      "id": "UNR-AI-008-ART50",
+      "summary": "AI-008 Video Localisation Tool — EU AI Act Art. 50: unresolved",
+      "evidence_ids": [
+        "EV-POLICY-AI008",
+        "EV-POLICY-OPERATINGSCOPE",
+        "EV-SYSTEMS-AI008"
+      ],
+      "owner": "Legal",
+      "rationale": "Binding legal authority was unavailable or unsuitable this run; formal Article 50 conclusion withheld.",
+      "resolution_need": "Re-run with the binding OJ and amendment texts retrieved.",
+      "impact_id": "IMP-AI-008-ART50"
+    },
+    {
+      "id": "UNR-AI-008-SYNTHETIC",
+      "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Learner and public transparency [CTRL-SYNTHETIC]: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT006",
+        "EV-EVIDENCE-REC009",
+        "EV-EVIDENCE-REC010",
+        "EV-POLICY-CTRLSYNTHETIC",
+        "EV-SYSTEMS-AI008"
+      ],
+      "owner": "Communications",
+      "rationale": "Label state 'visible_label'; provenance not verified: Visible label verified but machine-readable provenance not checked.",
+      "resolution_need": "Communications completes the provenance test.",
+      "impact_id": "IMP-AI-008-SYNTHETIC"
+    },
+    {
+      "id": "UNR-AI-008-EXCEPTION",
+      "summary": "AI-008 Video Localisation Tool — AI-POL-2026-08-15: Evidence and exceptions [CTRL-EXCEPTION]: unresolved",
+      "evidence_ids": [
+        "EV-CALENDAR-ACT007",
+        "EV-EVIDENCE-REC010",
+        "EV-POLICY-CTRLEXCEPTION"
+      ],
+      "owner": "Legal",
+      "rationale": "Exception request REC-010 is draft: No Legal approval or expiry date recorded. The automation may not approve it.",
+      "resolution_need": "Legal decides the exception; it needs a named owner, rationale, expiry date and Legal approval.",
+      "impact_id": "IMP-AI-008-EXCEPTION"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-05",
+      "stage": "impact-analysis",
+      "summary": "Separate statutory and internal-policy rule bases",
+      "concern": "Internal policy is stricter than Article 50 for deployers (e.g. notices for direct interaction).",
+      "options": [
+        "Merge into one compliance verdict",
+        "Keep one row per system per rule basis"
+      ],
+      "source_basis": "Interview 03:24 PM ('use the binding Article 50 text and the internal policy to evaluate our controls'); policy approval boundary.",
+      "chosen_behavior": "Each register row has rule_ref and rule_basis; statutory rows go to Legal, policy rows to Operations.",
+      "rationale": "Legal and Operations own different decisions; mixing bases would misstate legal exposure.",
+      "tradeoffs": [
+        "More rows for reviewers to read"
+      ],
+      "downstream_effect": "Approval requirements are routed by rule basis.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    },
+    {
+      "id": "DEC-06",
+      "stage": "impact-analysis",
+      "summary": "Quillhaven's role is taken from the register and corroborated by the policy operating facts",
+      "concern": "Provider duties (50(1), 50(2)) and deployer duties (50(3), 50(4)) differ.",
+      "options": [
+        "Assume deployer for all",
+        "Use register role, corroborate with the policy context, unresolved when either is open"
+      ],
+      "source_basis": "SYSTEMS provider_role/deployer_role; policy 'Operating scope' paragraph.",
+      "chosen_behavior": "Deployer-only when both agree; unknown (AI-005) stays unresolved with the owner's refresh as the need.",
+      "rationale": "Role decides which paragraph applies; it must not be assumed.",
+      "tradeoffs": [
+        "Conclusions for supplier products depend on owner-supplied facts that the policy says are not Legal decisions"
+      ],
+      "downstream_effect": "Statutory no-impact rows explain that provider duties sit with the supplier and ask Legal to confirm.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

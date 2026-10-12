@@ -1,0 +1,817 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T201652Z-S04",
+  "run_id": "RUN-20261012T201652Z",
+  "stage": "evidence-reconciliation",
+  "sequence": 4,
+  "created_at": "2026-10-12T20:20:03Z",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T201652Z-S03",
+    "path": "deliverables/snapshots/03-authority-and-timing.json",
+    "sha256": "sha256:61e50e1ede49ae5dd110f85c4db1249dbaf98e668b75e28d2141601d924cede9"
+  },
+  "consumed_record_ids": [
+    "SRC-CALENDAR#A1",
+    "SRC-EVIDENCE#A1",
+    "SRC-POLICY#A1",
+    "SRC-SYSTEMS#A1"
+  ],
+  "produced_record_ids": [
+    "CONFLICT-AI-003",
+    "CONFLICT-AI-007",
+    "CTRL-BOUNDARY",
+    "CTRL-EVIDENCE-STATES",
+    "CTRL-EXCEPTION",
+    "CTRL-NOTICE",
+    "CTRL-REGISTER",
+    "CTRL-STAFF-DRAFT",
+    "CTRL-SYNTHETIC",
+    "FACT-AI-001",
+    "FACT-AI-002",
+    "FACT-AI-003",
+    "FACT-AI-004",
+    "FACT-AI-005",
+    "FACT-AI-006",
+    "FACT-AI-007",
+    "FACT-AI-008",
+    "GAP-MISSING-AI-002",
+    "GAP-MISSING-AI-008",
+    "GAP-STALE-AI-005",
+    "REC-001",
+    "REC-002",
+    "REC-003",
+    "REC-004",
+    "REC-005",
+    "REC-006",
+    "REC-007",
+    "REC-008",
+    "REC-009",
+    "REC-010"
+  ],
+  "state": {
+    "system_facts": [
+      {
+        "id": "FACT-AI-001",
+        "summary": "AI-001 Learner Support Chat: Answers routine learner questions; role deployer-only; notice yes; evidence complete (2026-08-20)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI001",
+          "EV-POLICY-AI001",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Learner Operations",
+        "system_id": "AI-001",
+        "register_fields": {
+          "system_id": "AI-001",
+          "system_name": "Learner Support Chat",
+          "use_case": "Answers routine learner questions",
+          "owner": "Learner Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "yes",
+          "human_review": "staff escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-20",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "no",
+            "basis": "It does not classify biometric data or infer emotions or intentions."
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "yes",
+            "basis": "Learners exchange questions and generated replies directly with the licensed support chat."
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-002",
+        "summary": "AI-002 Admissions Draft Assistant: Drafts applicant email replies; role deployer-only; notice unknown; evidence partial (2026-07-01)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI002",
+          "EV-POLICY-AI002",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Admissions",
+        "system_id": "AI-002",
+        "register_fields": {
+          "system_id": "AI-002",
+          "system_name": "Admissions Draft Assistant",
+          "use_case": "Drafts applicant email replies",
+          "owner": "Admissions",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "applicants",
+          "output_type": "text",
+          "current_notice": "unknown",
+          "human_review": "advisor approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-07-01",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "no",
+            "basis": "These are individual administrative replies, not material published to inform the public about matters of public interest."
+          },
+          "direct_interaction": {
+            "value": "no",
+            "basis": "applicants do not converse with the AI product."
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-003",
+        "summary": "AI-003 Campaign Image Studio: Creates public campaign images; role deployer-only; notice visible_label; evidence complete (2026-08-22)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI003",
+          "EV-POLICY-AI003",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Communications",
+        "system_id": "AI-003",
+        "register_fields": {
+          "system_id": "AI-003",
+          "system_name": "Campaign Image Studio",
+          "use_case": "Creates public campaign images",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_image",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-22",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "deep_fake": {
+            "value": "no",
+            "basis": "They are not depictions of an existing person, campus, object or event presented as an authentic photograph or recording."
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "not-stated",
+            "basis": null
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-004",
+        "summary": "AI-004 Pronunciation Coach: Provides spoken practice feedback; role deployer-only; notice no; evidence complete (2026-08-18)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI004",
+          "EV-POLICY-AI004",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Learning Experience",
+        "system_id": "AI-004",
+        "register_fields": {
+          "system_id": "AI-004",
+          "system_name": "Pronunciation Coach",
+          "use_case": "Provides spoken practice feedback",
+          "owner": "Learning Experience",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "instructor escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-18",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "no",
+            "basis": "it is not used to identify or infer emotions or intentions or to assign people to categories from biometric data."
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "yes",
+            "basis": "Learners interact directly with the licensed spoken-practice product and receive pronunciation feedback."
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-005",
+        "summary": "AI-005 Remote Proctor Signal: Flags assessment sessions for review; role unknown; notice yes; evidence stale (2026-04-15)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI005",
+          "EV-POLICY-AI005",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Assessment Operations",
+        "system_id": "AI-005",
+        "register_fields": {
+          "system_id": "AI-005",
+          "system_name": "Remote Proctor Signal",
+          "use_case": "Flags assessment sessions for review",
+          "owner": "Assessment Operations",
+          "provider_role": "unknown",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "classification",
+          "current_notice": "yes",
+          "human_review": "human adjudication",
+          "evidence_status": "stale",
+          "evidence_updated_at": "2026-04-15",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "unknown",
+        "role_note": "Provider role not established: register and/or policy record it as unresolved.",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "unknown",
+            "basis": "Current-release documentation has not yet established whether the flagging uses biometric data to infer emotions, intentions or personal categories."
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "not-stated",
+            "basis": null
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-006",
+        "summary": "AI-006 Staff Summary Assistant: Summarizes internal meeting notes; role deployer-only; notice not_applicable; evidence complete (2026-08-14)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI006",
+          "EV-POLICY-AI006",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "People Operations",
+        "system_id": "AI-006",
+        "register_fields": {
+          "system_id": "AI-006",
+          "system_name": "Staff Summary Assistant",
+          "use_case": "Summarizes internal meeting notes",
+          "owner": "People Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "staff",
+          "output_type": "text",
+          "current_notice": "not_applicable",
+          "human_review": "author review",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-14",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "no",
+            "basis": "The summaries are not published or sent to applicants, learners or the general public."
+          },
+          "direct_interaction": {
+            "value": "not-stated",
+            "basis": null
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-007",
+        "summary": "AI-007 Website Guide Avatar: Answers public programme questions; role deployer-only; notice no; evidence conflicting (2026-08-21)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI007",
+          "EV-POLICY-AI007",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Marketing",
+        "system_id": "AI-007",
+        "register_fields": {
+          "system_id": "AI-007",
+          "system_name": "Website Guide Avatar",
+          "use_case": "Answers public programme questions",
+          "owner": "Marketing",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "marketing escalation",
+          "evidence_status": "conflicting",
+          "evidence_updated_at": "2026-08-21",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "deep_fake": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "artistic_or_fictional_work": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "yes",
+            "basis": "Visitors converse directly with the licensed website guide."
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      },
+      {
+        "id": "FACT-AI-008",
+        "summary": "AI-008 Video Localisation Tool: Generates dubbed public programme videos; role deployer-only; notice visible_label; evidence partial (2026-08-19)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI008",
+          "EV-POLICY-AI008",
+          "EV-POLICY-OPERATINGSCOPE"
+        ],
+        "owner": "Communications",
+        "system_id": "AI-008",
+        "register_fields": {
+          "system_id": "AI-008",
+          "system_name": "Video Localisation Tool",
+          "use_case": "Generates dubbed public programme videos",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_audio_video",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-08-19",
+          "record_version": "register-2026-08-26"
+        },
+        "actor_role": "deployer-only",
+        "role_note": "Register provider_role=no corroborated by the policy operating-scope paragraph (licensed supplier product).",
+        "derived_facts": {
+          "biometric_or_emotion": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "deep_fake": {
+            "value": "yes",
+            "basis": "Communications uses the supplier's product to create translated speech and adjusted lip movements for recorded programme presenters. The presenters are real people; the altered recording makes them appear to speak words in a language they did not actually record, and a viewer could mistake it for an authentic recording without disclosure. The videos communicate programme information, not an evidently artistic, satirical or fictional performance. The visible-label report, untested provenance and unapproved exception request remain exactly as recorded."
+          },
+          "artistic_or_fictional_work": {
+            "value": "no",
+            "basis": "The videos communicate programme information, not an evidently artistic, satirical or fictional performance."
+          },
+          "public_interest_text": {
+            "value": "not-stated",
+            "basis": null
+          },
+          "direct_interaction": {
+            "value": "not-stated",
+            "basis": null
+          }
+        },
+        "field_problems": [],
+        "record_version": "register-2026-08-26"
+      }
+    ],
+    "policy_controls": [
+      {
+        "id": "CTRL-NOTICE",
+        "summary": "A person directly interacting with an AI system must receive a clear notice before or at the first interaction unless the AI nature is obvious from the context.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLNOTICE"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-SYNTHETIC",
+        "summary": "Public synthetic images, audio, or video must retain machine-readable provenance when the tool supports it. The Communications owner also requires a visible label unless Legal approves a documented exception.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLSYNTHETIC"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-STAFF-DRAFT",
+        "summary": "Staff-only drafting tools are not automatically treated as public interactions. The owner must still record how generated material reaches learners or the public.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLSTAFFDRAFT"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Learner and public transparency",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-REGISTER",
+        "summary": "Each registered system must have a current owner, use description, exposed group, disclosure status, human-review path, and evidence reference.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLREGISTER"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Evidence and exceptions",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-EVIDENCE-STATES",
+        "summary": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLEVIDENCESTATES"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Evidence and exceptions",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-EXCEPTION",
+        "summary": "An exception requires a named owner, rationale, expiry date, and Legal approval. The automation may draft an exception request but may not approve it.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLEXCEPTION"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Evidence and exceptions",
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "CTRL-BOUNDARY",
+        "summary": "Legal owns final interpretation of the EU AI Act. Operations owns policy activation and operational deadlines. System owners correct evidence. The automation may prepare a draft impact package and proposed actions; it may not give final legal advice, activate policy, change a production deadline, close an incident, or submit an official response.",
+        "evidence_ids": [
+          "EV-POLICY-CTRLBOUNDARY"
+        ],
+        "owner": "Operations",
+        "rule_ref": "AI-POL-2026-08-15: Approval boundary",
+        "policy_version": "AI-POL-2026-08-15"
+      }
+    ],
+    "incident_evidence": [
+      {
+        "id": "REC-001",
+        "summary": "evidence for AI-001: Notice screenshot and release record agree",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC001"
+        ],
+        "owner": "Learner Operations",
+        "system_id": "AI-001",
+        "record_type": "evidence",
+        "status": "closed",
+        "evidence_state": "complete",
+        "reported_at": "2026-08-20",
+        "evidence_ref": "notice-screen-v3"
+      },
+      {
+        "id": "REC-002",
+        "summary": "evidence_gap for AI-002: No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC002"
+        ],
+        "owner": "Admissions",
+        "system_id": "AI-002",
+        "record_type": "evidence_gap",
+        "status": "open",
+        "evidence_state": "missing",
+        "reported_at": "2026-08-23",
+        "evidence_ref": "applicant-email-sample"
+      },
+      {
+        "id": "REC-003",
+        "summary": "incident for AI-003: Visible label exists but exported platform copy may have lost metadata",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC003"
+        ],
+        "owner": "Communications",
+        "system_id": "AI-003",
+        "record_type": "incident",
+        "status": "open",
+        "evidence_state": "conflicting",
+        "reported_at": "2026-08-24",
+        "evidence_ref": "social-post-884"
+      },
+      {
+        "id": "REC-004",
+        "summary": "incident for AI-004: First interaction contains no AI notice",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC004"
+        ],
+        "owner": "Learning Experience",
+        "system_id": "AI-004",
+        "record_type": "incident",
+        "status": "open",
+        "evidence_state": "complete",
+        "reported_at": "2026-08-18",
+        "evidence_ref": "coach-onboarding-v2"
+      },
+      {
+        "id": "REC-005",
+        "summary": "evidence_gap for AI-005: Provider role questionnaire predates the current release",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC005"
+        ],
+        "owner": "Assessment Operations",
+        "system_id": "AI-005",
+        "record_type": "evidence_gap",
+        "status": "open",
+        "evidence_state": "stale",
+        "reported_at": "2026-08-25",
+        "evidence_ref": "provider-role-questionnaire"
+      },
+      {
+        "id": "REC-006",
+        "summary": "evidence for AI-005: Flag never makes the final assessment decision",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC006"
+        ],
+        "owner": "Assessment Operations",
+        "system_id": "AI-005",
+        "record_type": "evidence",
+        "status": "open",
+        "evidence_state": "complete",
+        "reported_at": "2026-08-25",
+        "evidence_ref": "human-review-sop-v4"
+      },
+      {
+        "id": "REC-007",
+        "summary": "evidence for AI-006: Tool is restricted to staff workspace",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC007"
+        ],
+        "owner": "People Operations",
+        "system_id": "AI-006",
+        "record_type": "evidence",
+        "status": "closed",
+        "evidence_state": "complete",
+        "reported_at": "2026-08-14",
+        "evidence_ref": "internal-use-review"
+      },
+      {
+        "id": "REC-008",
+        "summary": "incident for AI-007: Owner says a banner exists but the current capture shows none",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC008"
+        ],
+        "owner": "Marketing",
+        "system_id": "AI-007",
+        "record_type": "incident",
+        "status": "open",
+        "evidence_state": "conflicting",
+        "reported_at": "2026-08-21",
+        "evidence_ref": "avatar-page-capture"
+      },
+      {
+        "id": "REC-009",
+        "summary": "evidence for AI-008: Visible label verified but machine-readable provenance not checked",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC009"
+        ],
+        "owner": "Communications",
+        "system_id": "AI-008",
+        "record_type": "evidence",
+        "status": "open",
+        "evidence_state": "partial",
+        "reported_at": "2026-08-19",
+        "evidence_ref": "localisation-export-test"
+      },
+      {
+        "id": "REC-010",
+        "summary": "exception_request for AI-008: No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC010"
+        ],
+        "owner": "Communications",
+        "system_id": "AI-008",
+        "record_type": "exception_request",
+        "status": "draft",
+        "evidence_state": "missing",
+        "reported_at": "2026-08-26",
+        "evidence_ref": "exception-draft-008"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "CONFLICT-AI-003",
+        "summary": "AI-003 evidence conflicts: Visible label exists but exported platform copy may have lost metadata",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI003",
+          "EV-EVIDENCE-REC003"
+        ],
+        "owner": "Communications",
+        "resolution_need": "System owner resolves which account is current; both are preserved."
+      },
+      {
+        "id": "CONFLICT-AI-007",
+        "summary": "AI-007 evidence conflicts: Owner says a banner exists but the current capture shows none",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI007",
+          "EV-EVIDENCE-REC008"
+        ],
+        "owner": "Marketing",
+        "resolution_need": "System owner resolves which account is current; both are preserved."
+      }
+    ],
+    "evidence_gaps": [
+      {
+        "id": "GAP-MISSING-AI-002",
+        "summary": "AI-002 has missing evidence: No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC002"
+        ],
+        "owner": "Admissions",
+        "resolution_need": "Owner supplies the evidence; missing is not treated as compliance or non-compliance."
+      },
+      {
+        "id": "GAP-STALE-AI-005",
+        "summary": "AI-005 evidence is stale (last updated 2026-04-15)",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI005",
+          "EV-EVIDENCE-REC005"
+        ],
+        "owner": "Assessment Operations",
+        "resolution_need": "Owner refreshes the evidence for the current release."
+      },
+      {
+        "id": "GAP-MISSING-AI-008",
+        "summary": "AI-008 has missing evidence: No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC010"
+        ],
+        "owner": "Communications",
+        "resolution_need": "Owner supplies the evidence; missing is not treated as compliance or non-compliance."
+      }
+    ],
+    "field_meanings": {
+      "current_notice": "yes = notice in place; no = no notice; unknown = not established; visible_label = visible label only (does not prove machine-readable provenance, per interview 03:35 PM); not_applicable = no disclosure obligation identified by the owner",
+      "provider_role / deployer_role": "yes / no / unknown as recorded by the register owner; unknown stays unresolved",
+      "evidence_status / evidence_state": "complete, partial, missing, stale, conflicting, not_applicable are distinct states (policy CTRL-EVIDENCE-STATES); missing is never converted to compliance or non-compliance",
+      "approval_required (CALENDAR)": "legal or operations: the role whose decision the action needs"
+    }
+  },
+  "unresolved": [
+    {
+      "id": "CONFLICT-AI-003",
+      "summary": "AI-003 evidence conflicts: Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "EV-SYSTEMS-AI003",
+        "EV-EVIDENCE-REC003"
+      ],
+      "owner": "Communications",
+      "resolution_need": "System owner resolves which account is current; both are preserved."
+    },
+    {
+      "id": "CONFLICT-AI-007",
+      "summary": "AI-007 evidence conflicts: Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "EV-SYSTEMS-AI007",
+        "EV-EVIDENCE-REC008"
+      ],
+      "owner": "Marketing",
+      "resolution_need": "System owner resolves which account is current; both are preserved."
+    },
+    {
+      "id": "GAP-MISSING-AI-002",
+      "summary": "AI-002 has missing evidence: No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "EV-EVIDENCE-REC002"
+      ],
+      "owner": "Admissions",
+      "resolution_need": "Owner supplies the evidence; missing is not treated as compliance or non-compliance."
+    },
+    {
+      "id": "GAP-STALE-AI-005",
+      "summary": "AI-005 evidence is stale (last updated 2026-04-15)",
+      "evidence_ids": [
+        "EV-SYSTEMS-AI005",
+        "EV-EVIDENCE-REC005"
+      ],
+      "owner": "Assessment Operations",
+      "resolution_need": "Owner refreshes the evidence for the current release."
+    },
+    {
+      "id": "GAP-MISSING-AI-008",
+      "summary": "AI-008 has missing evidence: No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "EV-EVIDENCE-REC010"
+      ],
+      "owner": "Communications",
+      "resolution_need": "Owner supplies the evidence; missing is not treated as compliance or non-compliance."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-04",
+      "stage": "evidence-reconciliation",
+      "summary": "Field meanings are disclosed, not guessed",
+      "concern": "Register values could be renamed or extended.",
+      "options": [
+        "Map unknown columns heuristically",
+        "Require the disclosed fields and report anything else"
+      ],
+      "source_basis": "Interview 03:35 PM (status values) and policy CTRL-EVIDENCE-STATES.",
+      "chosen_behavior": "Columns are found by header name (any order, extra columns allowed); missing fields or undisclosed values are reported as gaps.",
+      "rationale": "Guessing a renamed field could silently change a business meaning.",
+      "tradeoffs": [
+        "A legitimate rename needs a config change before the run is complete"
+      ],
+      "downstream_effect": "Unknown values become unresolved items with an owner.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RUN-20261012T195534Z-S02",
+  "run_id": "RUN-20261012T195534Z",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-10-12T19:55:37Z",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "RUN-20261012T195534Z-S01",
+    "path": "deliverables/snapshots/01-scope.json",
+    "sha256": "sha256:e18c4af2602acaeed5bc1dd1c84a531ff0c34fc1e78e3451a3a733c370ddaeaf"
+  },
+  "consumed_record_ids": [
+    "EV-INTERVIEW"
+  ],
+  "produced_record_ids": [
+    "EV-CALENDAR-ACT001",
+    "EV-CALENDAR-ACT002",
+    "EV-CALENDAR-ACT003",
+    "EV-CALENDAR-ACT004",
+    "EV-CALENDAR-ACT005",
+    "EV-CALENDAR-ACT006",
+    "EV-CALENDAR-ACT007",
+    "EV-CALENDAR-ACT008",
+    "EV-EVIDENCE-REC001",
+    "EV-EVIDENCE-REC002",
+    "EV-EVIDENCE-REC003",
+    "EV-EVIDENCE-REC004",
+    "EV-EVIDENCE-REC005",
+    "EV-EVIDENCE-REC006",
+    "EV-EVIDENCE-REC007",
+    "EV-EVIDENCE-REC008",
+    "EV-EVIDENCE-REC009",
+    "EV-EVIDENCE-REC010",
+    "EV-INTERVIEW",
+    "EV-SYSTEMS-AI001",
+    "EV-SYSTEMS-AI002",
+    "EV-SYSTEMS-AI003",
+    "EV-SYSTEMS-AI004",
+    "EV-SYSTEMS-AI005",
+    "EV-SYSTEMS-AI006",
+    "EV-SYSTEMS-AI007",
+    "EV-SYSTEMS-AI008",
+    "SRC-ART50-SD#A1",
+    "SRC-CALENDAR#A1",
+    "SRC-EVIDENCE#A1",
+    "SRC-GUIDANCE#A1",
+    "SRC-LAW-AMEND#A1",
+    "SRC-LAW-CONS#A1",
+    "SRC-LAW-OJ#A1",
+    "SRC-POLICY#A1",
+    "SRC-SYSTEMS#A1",
+    "SRC-TIMELINE#A1"
+  ],
+  "state": {
+    "review_date": "2026-08-26",
+    "sources": [
+      {
+        "id": "SRC-ART50-SD#A1",
+        "source_id": "SRC-ART50-SD",
+        "summary": "Article 50 official paragraph text (AI Act Service Desk) retrieved and identity verified",
+        "evidence_ids": [],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "retrieved_at": "2026-10-12T19:55:34Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=utf-8",
+        "version_metadata": {
+          "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+          "last_modified_header": "Fri, 09 Oct 2026 11:50:57 GMT",
+          "etag": "W/\"1791546657-gzip\"",
+          "based_on_consolidation": "2026-07-27"
+        },
+        "content_hash": "sha256:dd09700d18616b9ff9e6bb6a667d6fb0a2173755ab9e46be1039baf77474acaf",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-ART50-SD.html",
+        "required": false,
+        "interview_ref": "03:24 PM source list",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50"
+      },
+      {
+        "id": "SRC-LAW-OJ#A1",
+        "source_id": "SRC-LAW-OJ",
+        "summary": "Official Journal Regulation (EU) 2024/1689 could not be read: SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "evidence_ids": [],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "retrieved_at": "2026-10-12T19:55:34Z",
+        "retrieval_status": "unavailable",
+        "content_type": "unknown",
+        "version_metadata": null,
+        "content_hash": null,
+        "local_reference": null,
+        "required": true,
+        "interview_ref": "03:24 PM source list (LAW / OJ)",
+        "used_in_deliverables": false,
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "owner": "Compliance and Operations Manager"
+      },
+      {
+        "id": "SRC-LAW-AMEND#A1",
+        "source_id": "SRC-LAW-AMEND",
+        "summary": "Commission-linked Official Journal amendment route (Regulation (EU) 2026/1744) could not be read: SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "evidence_ids": [],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "retrieved_at": "2026-10-12T19:55:34Z",
+        "retrieval_status": "unavailable",
+        "content_type": "unknown",
+        "version_metadata": null,
+        "content_hash": null,
+        "local_reference": null,
+        "required": true,
+        "interview_ref": "03:24 PM source list (AMEND)",
+        "used_in_deliverables": false,
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "owner": "Compliance and Operations Manager"
+      },
+      {
+        "id": "SRC-LAW-CONS#A1",
+        "source_id": "SRC-LAW-CONS",
+        "summary": "27 July 2026 consolidated text (navigation reference, not a separate act) could not be read: SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "evidence_ids": [],
+        "source_role": "other",
+        "authority": "advisory",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "retrieved_at": "2026-10-12T19:55:34Z",
+        "retrieval_status": "unavailable",
+        "content_type": "unknown",
+        "version_metadata": null,
+        "content_hash": null,
+        "local_reference": null,
+        "required": false,
+        "interview_ref": "03:24 PM source list; 03:34 PM 'navigation aid, not a separate legal act'",
+        "used_in_deliverables": false,
+        "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+        "owner": "Compliance and Operations Manager"
+      },
+      {
+        "id": "SRC-TIMELINE#A1",
+        "source_id": "SRC-TIMELINE",
+        "summary": "Official implementation timing context (AI Act Service Desk timeline) retrieved and identity verified",
+        "evidence_ids": [],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "retrieved_at": "2026-10-12T19:55:35Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=utf-8",
+        "version_metadata": {
+          "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+          "last_modified_header": "Fri, 09 Oct 2026 11:59:50 GMT",
+          "etag": "W/\"1791547190-gzip\""
+        },
+        "content_hash": "sha256:28f0a7b623182b2f16da79dca8b628b5ef10233a0bcb8def1f83da0a8a231127",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-TIMELINE.html",
+        "required": false,
+        "interview_ref": "03:24 PM source list; 03:35 PM",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline"
+      },
+      {
+        "id": "SRC-GUIDANCE#A1",
+        "source_id": "SRC-GUIDANCE",
+        "summary": "Explanatory Commission Article 50 guidance (FAQ) retrieved and identity verified",
+        "evidence_ids": [],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "retrieved_at": "2026-10-12T19:55:35Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=UTF-8",
+        "version_metadata": {
+          "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+          "last_modified_header": "Mon, 12 Oct 2026 19:13:15 GMT",
+          "etag": "W/\"1791832395-gzip\""
+        },
+        "content_hash": "sha256:11402a585818788bc848de974d73da8001996944fe34f79e4b5a76a42ff394fb",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-GUIDANCE.html",
+        "required": false,
+        "interview_ref": "03:24 PM source list",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+      },
+      {
+        "id": "SRC-POLICY#A1",
+        "source_id": "SRC-POLICY",
+        "summary": "Internal AI-use policy and Article 50 operating facts (Operations) retrieved and identity verified",
+        "evidence_ids": [],
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "retrieved_at": "2026-10-12T19:55:35Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json; charset=utf-8",
+        "version_metadata": {
+          "page_title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "policy_version": "AI-POL-2026-08-15",
+          "context_revision": "RC-CONTEXT-2026-09-12-R1",
+          "page_last_edited": "2026-09-13T19:13:30Z"
+        },
+        "content_hash": "sha256:4348d7c5ee633af716b3479542d4a9fc20d968799ff340d9ab396aa0b0c46c8d",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-POLICY.json",
+        "required": true,
+        "interview_ref": "03:24 PM source list; 03:35 PM",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856 (public page API)"
+      },
+      {
+        "id": "SRC-SYSTEMS#A1",
+        "source_id": "SRC-SYSTEMS",
+        "summary": "AI system register (SYSTEMS) retrieved and identity verified",
+        "evidence_ids": [
+          "EV-SYSTEMS-AI001",
+          "EV-SYSTEMS-AI002",
+          "EV-SYSTEMS-AI003",
+          "EV-SYSTEMS-AI004",
+          "EV-SYSTEMS-AI005",
+          "EV-SYSTEMS-AI006",
+          "EV-SYSTEMS-AI007",
+          "EV-SYSTEMS-AI008"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "retrieved_at": "2026-10-12T19:55:36Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv; charset=utf-8",
+        "version_metadata": {
+          "record_versions": [
+            "register-2026-08-26"
+          ],
+          "rows": 8,
+          "header": [
+            "system_id",
+            "system_name",
+            "use_case",
+            "owner",
+            "provider_role",
+            "deployer_role",
+            "exposed_group",
+            "output_type",
+            "current_notice",
+            "human_review",
+            "evidence_status",
+            "evidence_updated_at",
+            "record_version"
+          ],
+          "extra_columns": [],
+          "row_problems": []
+        },
+        "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-SYSTEMS.csv",
+        "required": true,
+        "interview_ref": "03:24 PM source list",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://doc-0k-48-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/qks20fafn8092m80iu7579uegc/1791834925000/116538737177717635516/*/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU?format=csv"
+      },
+      {
+        "id": "SRC-EVIDENCE#A1",
+        "source_id": "SRC-EVIDENCE",
+        "summary": "Incident, gap, evidence and exception records (EVIDENCE) retrieved and identity verified",
+        "evidence_ids": [
+          "EV-EVIDENCE-REC001",
+          "EV-EVIDENCE-REC002",
+          "EV-EVIDENCE-REC003",
+          "EV-EVIDENCE-REC004",
+          "EV-EVIDENCE-REC005",
+          "EV-EVIDENCE-REC006",
+          "EV-EVIDENCE-REC007",
+          "EV-EVIDENCE-REC008",
+          "EV-EVIDENCE-REC009",
+          "EV-EVIDENCE-REC010"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+        "retrieved_at": "2026-10-12T19:55:36Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv",
+        "version_metadata": {
+          "record_versions": [],
+          "rows": 10,
+          "header": [
+            "record_id",
+            "system_id",
+            "record_type",
+            "reported_at",
+            "owner",
+            "status",
+            "evidence_ref",
+            "evidence_state",
+            "notes"
+          ],
+          "extra_columns": [],
+          "row_problems": []
+        },
+        "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-EVIDENCE.csv",
+        "required": true,
+        "interview_ref": "03:33 PM",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://doc-10-48-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/g81vs8d16697k4tl54jku5ea14/1791834930000/116538737177717635516/*/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk?format=csv"
+      },
+      {
+        "id": "SRC-CALENDAR#A1",
+        "source_id": "SRC-CALENDAR",
+        "summary": "Actions by owner, due date, status and review requirements (CALENDAR) retrieved and identity verified",
+        "evidence_ids": [
+          "EV-CALENDAR-ACT001",
+          "EV-CALENDAR-ACT002",
+          "EV-CALENDAR-ACT003",
+          "EV-CALENDAR-ACT004",
+          "EV-CALENDAR-ACT005",
+          "EV-CALENDAR-ACT006",
+          "EV-CALENDAR-ACT007",
+          "EV-CALENDAR-ACT008"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+        "retrieved_at": "2026-10-12T19:55:37Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv; charset=utf-8",
+        "version_metadata": {
+          "record_versions": [
+            "calendar-2026-08-26"
+          ],
+          "rows": 8,
+          "header": [
+            "action_id",
+            "system_id",
+            "action",
+            "owner",
+            "due_date",
+            "status",
+            "approval_required",
+            "source_version"
+          ],
+          "extra_columns": [],
+          "row_problems": []
+        },
+        "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+        "local_reference": "deliverables/sources/RUN-20261012T195534Z/SRC-CALENDAR.csv",
+        "required": true,
+        "interview_ref": "03:36 PM; resent 03:38 PM",
+        "used_in_deliverables": false,
+        "reason": null,
+        "owner": "Compliance and Operations Manager",
+        "effective_locator": "https://doc-0o-48-sheets.googleusercontent.com/export/f3kk9gtum31ktuqh54kn7i1e14/lsn5uupse7t687mfg1cbl9cvoc/1791834930000/116538737177717635516/*/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA?format=csv"
+      }
+    ],
+    "evidence_extract_file": "deliverables/sources/RUN-20261012T195534Z/extracts.json"
+  },
+  "unresolved": [
+    {
+      "id": "UNR-SRC-SRC-LAW-OJ",
+      "summary": "Official Journal Regulation (EU) 2024/1689 not usable this run",
+      "evidence_ids": [
+        "SRC-LAW-OJ#A1"
+      ],
+      "owner": "Compliance and Operations Manager",
+      "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+      "resolution_need": "Restore access to the disclosed route and re-run; no undisclosed local copy is substituted."
+    },
+    {
+      "id": "UNR-SRC-SRC-LAW-AMEND",
+      "summary": "Commission-linked Official Journal amendment route (Regulation (EU) 2026/1744) not usable this run",
+      "evidence_ids": [
+        "SRC-LAW-AMEND#A1"
+      ],
+      "owner": "Compliance and Operations Manager",
+      "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+      "resolution_need": "Restore access to the disclosed route and re-run; no undisclosed local copy is substituted."
+    },
+    {
+      "id": "UNR-SRC-SRC-LAW-CONS",
+      "summary": "27 July 2026 consolidated text (navigation reference, not a separate act) not usable this run",
+      "evidence_ids": [
+        "SRC-LAW-CONS#A1"
+      ],
+      "owner": "Compliance and Operations Manager",
+      "reason": "SourceUnavailable: HTTP 202 bot-protection challenge (x-amzn-waf-action) instead of the document",
+      "resolution_need": "Restore access to the disclosed route and re-run; no undisclosed local copy is substituted."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-02",
+      "stage": "source-capture",
+      "summary": "Read every disclosed route live; never substitute a local copy",
+      "concern": "A failed read could tempt a fallback to stored files.",
+      "options": [
+        "Fall back to the last good capture",
+        "Record the failure and continue with what is supportable"
+      ],
+      "source_basis": "Starter README; interview 03:33 PM ('produce useful unaffected work while maintaining clear visibility on the limits').",
+      "chosen_behavior": "Each run fetches all 10 routes with retries; failures are kept as attempts with null hash.",
+      "rationale": "A stale copy would hide the gap the reviewers need to see.",
+      "tradeoffs": [
+        "A network outage yields a partial or blocked package instead of a complete one"
+      ],
+      "downstream_effect": "Stage 03-05 mark dependent items unresolved; the brief lists the failure.",
+      "evidence_ids": [
+        "EV-INTERVIEW"
+      ],
+      "owner": "Automation specialist (Ricardo)"
+    }
+  ]
+}

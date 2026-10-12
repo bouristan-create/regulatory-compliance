@@ -1,0 +1,130 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven Academy//regulatory-change-impact-brief 1.0//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Article 50 proposed actions (draft)
+BEGIN:VEVENT
+UID:ACT-001@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:[Proposed] ACT-001 AI-004: Add and verify first-interaction AI noti
+ ce
+DESCRIPTION:Action ACT-001 | System AI-004 | Responsible role: Learning Exp
+ erience | Basis: IMP-AI-004-NOTICE (AI-POL-2026-08-15: Learner and public 
+ transparency [CTRL-NOTICE]\, supported-impact) | Date basis: CALENDAR ['ca
+ lendar-2026-08-26'] due_date (proposed\; not changed by this automation) |
+  Approval: pending (Operations) | Calendar status: planned | Run RUN-20261
+ 012T195534Z | DRAFT proposal\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-002@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:[Proposed] ACT-002 AI-007: Resolve disclosure evidence conflict
+DESCRIPTION:Action ACT-002 | System AI-007 | Responsible role: Marketing | 
+ Basis: IMP-AI-007-NOTICE (AI-POL-2026-08-15: Learner and public transparen
+ cy [CTRL-NOTICE]\, conflicting) | Date basis: CALENDAR ['calendar-2026-08-
+ 26'] due_date (proposed\; not changed by this automation) | Approval: pend
+ ing (Operations) | Calendar status: open | Run RUN-20261012T195534Z | DRAF
+ T proposal\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-003@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:[Proposed] ACT-003 AI-002: Confirm recipient disclosure practice
+DESCRIPTION:Action ACT-003 | System AI-002 | Responsible role: Admissions |
+  Basis: IMP-AI-002-ART50 (EU AI Act Art. 50\, unresolved)\; IMP-AI-002-STA
+ FF-DRAFT (AI-POL-2026-08-15: Learner and public transparency [CTRL-STAFF-D
+ RAFT]\, unresolved) | Date basis: CALENDAR ['calendar-2026-08-26'] due_dat
+ e (proposed\; not changed by this automation) | Approval: pending (Legal) 
+ | Calendar status: open | Run RUN-20261012T195534Z | DRAFT proposal\; not 
+ an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-004@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[Proposed] ACT-004 AI-003: Verify machine-readable provenance after
+  publishing
+DESCRIPTION:Action ACT-004 | System AI-003 | Responsible role: Communicatio
+ ns | Basis: IMP-AI-003-SYNTHETIC (AI-POL-2026-08-15: Learner and public tr
+ ansparency [CTRL-SYNTHETIC]\, conflicting) | Date basis: CALENDAR ['calend
+ ar-2026-08-26'] due_date (proposed\; not changed by this automation) | App
+ roval: pending (Operations) | Calendar status: open | Run RUN-20261012T195
+ 534Z | DRAFT proposal\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-005@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:[Proposed] ACT-005 AI-005: Refresh provider-role and release eviden
+ ce
+DESCRIPTION:Action ACT-005 | System AI-005 | Responsible role: Assessment O
+ perations | Basis: IMP-AI-005-ART50 (EU AI Act Art. 50\, unresolved)\; IMP
+ -AI-005-EVIDENCE-CURRENCY (AI-POL-2026-08-15: Evidence and exceptions [CTR
+ L-REGISTER]\, unresolved) | Date basis: CALENDAR ['calendar-2026-08-26'] d
+ ue_date (proposed\; not changed by this automation) | Approval: pending (L
+ egal) | Calendar status: open | Run RUN-20261012T195534Z | DRAFT proposal\
+ ; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-006@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:[Proposed] ACT-006 AI-008: Complete provenance test
+DESCRIPTION:Action ACT-006 | System AI-008 | Responsible role: Communicatio
+ ns | Basis: IMP-AI-008-SYNTHETIC (AI-POL-2026-08-15: Learner and public tr
+ ansparency [CTRL-SYNTHETIC]\, unresolved) | Date basis: CALENDAR ['calenda
+ r-2026-08-26'] due_date (proposed\; not changed by this automation) | Appr
+ oval: pending (Operations) | Calendar status: open | Run RUN-20261012T1955
+ 34Z | DRAFT proposal\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-007@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[Proposed] ACT-007 AI-008: Review exception request
+DESCRIPTION:Action ACT-007 | System AI-008 | Responsible role: Legal | Basi
+ s: IMP-AI-008-EXCEPTION (AI-POL-2026-08-15: Evidence and exceptions [CTRL-
+ EXCEPTION]\, unresolved) | Date basis: CALENDAR ['calendar-2026-08-26'] du
+ e_date (proposed\; not changed by this automation) | Approval: pending (Le
+ gal) | Calendar status: blocked | Run RUN-20261012T195534Z | DRAFT proposa
+ l\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-008@regulatory-change-impact-brief.quillhaven.invalid
+DTSTAMP:20261012T195534Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[Proposed] ACT-008 ALL: Quarterly AI register evidence review
+DESCRIPTION:Action ACT-008 | System ALL | Responsible role: Operations | Ba
+ sis: CALENDAR register action (no linked impact this run) | Date basis: CA
+ LENDAR ['calendar-2026-08-26'] due_date (proposed\; not changed by this au
+ tomation) | Approval: pending (Operations) | Calendar status: scheduled | 
+ Run RUN-20261012T195534Z | DRAFT proposal\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
